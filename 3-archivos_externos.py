@@ -10,7 +10,7 @@ miArchivo.close() # esta linea cierra el archivo "en memoria" de python
 '''
 
 '''
-elmismoArchivo = open("archivo.txt", "r")        #el segundo argumento "r" indica "lectura"
+elmismoArchivo = open("archivo.txt", "r")        #el segundo argumento "r" indica "lectura" ("a" indica leer y permitir adicionar texto)
 #texto = elmismoArchivo.read()
 textoLista = elmismoArchivo.readlines()
 elmismoArchivo.close()
@@ -96,13 +96,14 @@ archivo.close()'''
 
 # ESCRIBIR UNAS LINEAS AL PRINCIPIO SIN SOBREESCRIBIR TEXTO
 
-archivo = open("archivo.txt", "r+")
-textoAAgregar = "este sera el primer parrafo.\n"
-textoActual = archivo.read()
-print(textoActual)
-archivo.seek(0)
-archivo.write(textoAAgregar + textoActual)
-archivo.seek(0)
-print(archivo.read())
+archivo = open("archivo.txt", "w")
+# textoAAgregar = "este sera el primer parrafo.\n"
+# textoActual = archivo.read()
+# print(textoActual)
+# archivo.seek(0)
+# archivo.write(textoAAgregar + textoActual) 
+archivo.write("")
+# archivo.seek(0)
+# print(archivo.read())
 archivo.close()
 

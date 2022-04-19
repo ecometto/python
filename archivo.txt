@@ -1,6 +1,0 @@
-este sera el primer parrafo.
-este sera el primer parrafo.
-primer parrafo.
-segundo parrafo
-tercer parrafo
-cuarto parrafo
