@@ -94,16 +94,19 @@ print(archivo.read())
 
 archivo.close()'''
 
-# ESCRIBIR UNAS LINEAS AL PRINCIPIO SIN SOBREESCRIBIR TEXTO
+# # ESCRIBIR UNAS LINEAS AL PRINCIPIO SIN SOBREESCRIBIR TEXTO
 
-archivo = open("archivo.txt", "w")
+# archivo = open("archivo.txt", "+r")
 # textoAAgregar = "este sera el primer parrafo.\n"
 # textoActual = archivo.read()
 # print(textoActual)
 # archivo.seek(0)
 # archivo.write(textoAAgregar + textoActual) 
-archivo.write("")
+# archivo.write("")
 # archivo.seek(0)
 # print(archivo.read())
-archivo.close()
+# archivo.close()
+
+archivo = open("archivo.txt,r")
+
 
