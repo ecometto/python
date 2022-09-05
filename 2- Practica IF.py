@@ -1,5 +1,12 @@
-print("programa de evaluacion de alumnos")
 
-NUMERO = 2+8
 
-print(NUMERO)
+a = 2
+b = 4
+
+if a>b:
+    print('a es mayor que b')
+else:
+    print('a es menor que b')
+
+
+
