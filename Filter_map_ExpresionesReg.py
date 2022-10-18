@@ -2,6 +2,7 @@
 def decoradora(funcionParametro):  #ejecutada al final
     '''esta funcion "decoradora" lo que hace es realizar un agregado a las funciones.
     la forma de llamarla es agregando un "@" antes de la funcion que queremos realizar el agregado'''
+    
     def funcionResultado(*args):
         print("*"*10, "\n Se ejecutará una funcion: ")
         funcionParametro(*args)

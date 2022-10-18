@@ -38,6 +38,32 @@ print (midiccionario3)
 print (midiccionario3 ["holatodos"])
 
 
+# transformar numero a texto con funcion y diccionario (objeto) 
+numeros = {
+    "1" : "uno",
+    "2" : "dos",
+    "3" : "tres",
+    "4" : "cuatro",
+    "5" : "cinco",
+    "6" : "seis",
+    "7" : "siete",
+    "8" : "ocho",
+    "9" : "nueve"
+}
 
+def transformarNumero ():
+    # num = input("ingrese un numero del 0 al 9 - ")
+    # for n in num:
+        # textoNum += numeros[n] + ' ' 
+    # print ("El numero ingresado, en letras es: " + textoNum)
+    
+    #print("el numero ingresado es ", numeros[num])
+    for numero in numeros.items():
+        print(numero[0] , " - " , numero[1])
+    print("------------------------------")
+    for cada in numeros.keys():
+        print(cada , " - " , numeros[cada])    
+    
+transformarNumero ()
 
 
