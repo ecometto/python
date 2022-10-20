@@ -17,6 +17,9 @@ with open("./repaso.pruebas1.txt", "r") as f:
 
 print(data)
 
+
+
+
 ##cortando ultimas 3 filas
 # qlinesArray=int(len(arrayLines))
 # toCut=int(input("ingrese numero de filas a cortar"))
