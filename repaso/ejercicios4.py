@@ -84,8 +84,8 @@ print("--------")
 # # using regex findall()
 import re
 texto="esto es uN texto de Prueba"
-data=re.findall("\w+",texto)
-print(data)
+data=re.findall("\w+",myT)
+# print(data)
 print(len(data))
 print(type(data))
 

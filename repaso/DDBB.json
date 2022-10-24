@@ -1,0 +1,175 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "cod": "101",
+            "description": "pantalon",
+            "price": 10000.0
+        },
+        {
+            "id": 2,
+            "cod": "102",
+            "description": "camisa lisa",
+            "price": 4000.0
+        },
+        {
+            "id": 3,
+            "cod": "103",
+            "description": "camisa rayada",
+            "price": 4150.0
+        },
+        {
+            "id": 4,
+            "cod": "104",
+            "description": "remera Manga corta blanca",
+            "price": 3550.99
+        },
+        {
+            "id": 5,
+            "cod": "105",
+            "description": "remera Manga larga",
+            "price": 3850.99
+        },
+        {
+            "id": 6,
+            "cod": "106",
+            "description": "medias cortas",
+            "price": 999.0
+        },
+        {
+            "id": 7,
+            "cod": "107",
+            "description": "medias largas de algodon",
+            "price": 1200.0
+        },
+        {
+            "id": 8,
+            "cod": "cod2",
+            "description": "gorro de lana negro",
+            "price": 850.0
+        },
+        {
+            "id": 9,
+            "cod": "cod01",
+            "description": "pijamas para hombres",
+            "price": 5000.0
+        },
+        {
+            "id": 10,
+            "cod": "codxx",
+            "description": "gorra de algodon",
+            "price": 300.0
+        },
+        {
+            "id": 10,
+            "cod": "cdzap",
+            "description": "zapato de cuero",
+            "price": 11000.0
+        },
+        {
+            "id": 12,
+            "cod": "bla",
+            "description": "remera de algodon blanca y negra",
+            "price": 1800.0
+        },
+        {
+            "id": 12,
+            "cod": "cdsa",
+            "description": "otro mas",
+            "price": 1420.0
+        }
+    ],
+    "sales": [
+        {
+            "idVenta": 1,
+            "fecha": "2022-10-21",
+            "montoTotal": 27551.98,
+            "detalle": [
+                [
+                    2,
+                    "camisa lisa",
+                    4000.0,
+                    2,
+                    8000.0
+                ],
+                [
+                    3,
+                    "camisa rayada",
+                    4150.0,
+                    3,
+                    12450.0
+                ],
+                [
+                    4,
+                    "remera Manga corta blanca",
+                    3550.99,
+                    2,
+                    7101.98
+                ]
+            ]
+        },
+        {
+            "idVenta": 2,
+            "fecha": "2022-10-21",
+            "montoTotal": 15401.98,
+            "detalle": [
+                [
+                    2,
+                    "camisa lisa",
+                    4000.0,
+                    2,
+                    8000.0
+                ],
+                [
+                    4,
+                    "remera Manga corta blanca",
+                    3550.99,
+                    1,
+                    3550.99
+                ],
+                [
+                    5,
+                    "remera Manga larga",
+                    3850.99,
+                    1,
+                    3850.99
+                ]
+            ]
+        },
+        {
+            "idVenta": 3,
+            "fecha": "2022-10-21",
+            "montoTotal": 4100.0,
+            "detalle": [
+                [
+                    8,
+                    "gorro de lana negro",
+                    850.0,
+                    2,
+                    1700.0
+                ],
+                [
+                    7,
+                    "medias largas de algodon",
+                    1200.0,
+                    2,
+                    2400.0
+                ]
+            ]
+        },
+        {
+            "idVenta": 4,
+            "fecha": "2022-10-21",
+            "montoTotal": 5000.0,
+            "detalle": [
+                [
+                    9,
+                    "pijamas para hombres",
+                    5000.0,
+                    1,
+                    5000.0
+                ]
+            ]
+        }
+    ]
+}
