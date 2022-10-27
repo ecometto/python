@@ -75,6 +75,7 @@ print(archivo.read())
 
 archivo.close '''
 
+
 ''' # PERMITE LEER y/o EXTRAE POR PARRAFO EN PARTICULAR
 archivo = open("archivo.txt","r+")
 print(archivo.read())

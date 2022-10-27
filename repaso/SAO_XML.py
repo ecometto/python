@@ -46,22 +46,18 @@ for cada in root.iter("activity"):
 #      print(f"{cada[0].tag}: {cada[0].text} - ActivityType: {cada[3].text}")
 
 
-# # FUNCION OPTIMIZADA con "FINDALL":
-# activity= root[2].findall("activity") #obtengo la lista de actividades
-# for i in activity:
-#     print(i[3].text)
+file = open("./repaso/SAO.xml")
 
+data=ET.parse(file)
+root=data.getroot()
 
+#para visualizar la primera linea de tag HIJOS
+for cada in root:
+    print(cada.tag)
 
-# ----------------------------------------------------------------- 
-# ESTA OPCION FUNCIONA CORRECTAMENTE..
+print("-----------")
+#con el dato anterior podemos acceder a cada uno:
 
-# # for item in root: #veo y obtengo posición de maniActivityList dentro de raiz 
-# #     print(item.tag) #(para este caso es posición 2)
+todos=Document.getElementsByTagName('activity')
 
-# activity= root[2].findall("activity") #obtengo la lista de actividades
-# for i in activity:
-#     for n in range(len(i)):
-#         if i[n].tag== "activityType":
-#             print(i[n].text)
-# # -----------------------------------------------------------------
+print(todos)
