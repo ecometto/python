@@ -9,19 +9,24 @@ if ( ! localStorage.getItem("articulos") ){
 }
 
 const boton = document.querySelector("#boton")
-boton.addEventListener('click', ()=> alert('FASDFADSFSADF'))
+boton.addEventListener('click', ()=> nuevo())
 
+const btnReset= document.querySelector("#reset")
+btnReset.addEventListener('click', ()=> reset())
 
-nombre=document.getElementById('nombre').value
-marca=document.getElementById('marca').value
-modelo=document.getElementById('modelo').value
-registro={'nombre': nombre,'marca': marca,'modelo': modelo}
-lista.push(registro)
-console.log(lista);
-
-data=JSON.stringify(lista)
-localStorage.setItem("articulos", data)
+function nuevo(){
+    nombre=document.getElementById('nombre').value
+    marca=document.getElementById('marca').value
+    modelo=document.getElementById('modelo').value
+    registro={'nombre': nombre,'marca': marca,'modelo': modelo}
+    lista.push(registro)
+    console.log(lista);
+    
+    data=JSON.stringify(lista)
+    localStorage.setItem("articulos", data)
+}
 
 function reset(){
-localStorage.setItem("articulos", "")
+    console.log("borrando...")
+    localStorage.clear();
 }
