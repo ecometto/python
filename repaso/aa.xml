@@ -1,22 +1,46 @@
 <data>
     <country name="Liechtenstein">
-        <rank updated="yes" checked="True">4</rank>
+        <rank updated="yes" checked="True" audit="false">4</rank>
         <year>2015</year>
         <gdppc>141100</gdppc>
         <neighbor name="Austria" direction="E" />
         <neighbor name="Switzerland" direction="W" />
     </country>
     <country name="Singapore">
-        <rank updated="yes" checked="True">Obsolete</rank>
+        <rank updated="yes" checked="True" audit="false">Obsolete</rank>
         <year>2011</year>
         <gdppc>59900</gdppc>
         <neighbor name="Malaysia" direction="N" />
     </country>
     <country name="Panama">
-        <rank updated="yes" checked="True">Obsolete</rank>
+        <rank updated="yes" checked="True" audit="false">Obsolete</rank>
         <year>2011</year>
         <gdppc>13600</gdppc>
         <neighbor name="Costa Rica" direction="W" />
         <neighbor name="Colombia" direction="E" />
     </country>
-</data>
+<country name="Panama2">
+        <rank updated="yes" audit="false">Obsolete</rank>
+        <year>2011</year>
+        <gdppc>13600</gdppc>
+        <neighbor name="Costa Rica" direction="W" />
+        <neighbor name="Colombia" direction="E" />
+    </country><country name="Panama2">
+        <rank updated="yes" audit="false">Obsolete</rank>
+        <year>2011</year>
+        <gdppc>13600</gdppc>
+        <neighbor name="Costa Rica" direction="W" />
+        <neighbor name="Colombia" direction="E" />
+    </country><country name="Panama2">
+        <rank updated="yes" audit="false">Obsolete</rank>
+        <year>2011</year>
+        <gdppc>13600</gdppc>
+        <neighbor name="Costa Rica" direction="W" />
+        <neighbor name="Colombia" direction="E" />
+    </country><country name="Panama2">
+        <rank updated="yes" audit="false">Obsolete</rank>
+        <year>2011</year>
+        <gdppc>13600</gdppc>
+        <neighbor name="Costa Rica" direction="W" />
+        <neighbor name="Colombia" direction="E" />
+ </data>
