@@ -23,15 +23,15 @@ def new(data):
         newPerson(data)
         continuar=input("desea continuar: 1-Si  /  0-NO")
 
-def filterAge(data, edad):
-    filtered= filter(lambda x:x.edad>20, data)
+def filterAge(data, age):
+    filtered= filter(lambda x:x['age']>age, data)
     return filtered
 
 def listar(data):
     '''Funcion para filtrar '''
     for cada in data:
-        print(f"Nombre: {cada.nombre}, Edad: {cada.edad}, Ciudad: {cada.city}")
-
+        print(f"Nombre: {cada['name']}, Edad: {cada['age']}, Ciudad: {cada['city']}")
+        # print(cada)
 # ------------- comienzo ---------------
 try:
     file=open("JsonFile.json")
@@ -50,8 +50,10 @@ while opcion != "0":
     if opcion == "1":
         new(data)
     elif opcion=="2":
-        edad= input("ingrese la edad")
-        filterAge(data, edad)
+        edad= int(input("ingrese la edad"))
+        filtered=filterAge(data, edad)
+        for cada in filtered:
+            print(f"{cada['name']} - {cada['age']}")
     elif opcion == "3":
         listar(data)           
     
@@ -59,7 +61,7 @@ while opcion != "0":
     
 
         
-
+# * en filtrado, inclur el input en la funcion 
 # file=open("JsonFile.json")
 # data= json.load(file)
 # print(data)
