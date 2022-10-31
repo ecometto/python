@@ -3,9 +3,11 @@ lista=[]
 
 if ( ! localStorage.getItem("articulos") ){
     lista=[]
+    console.log(lista);
 } else{
     data = localStorage.getItem("articulos")
     lista=JSON.parse(data)
+    console.log(lista);
 }
 
 const boton = document.querySelector("#boton")
