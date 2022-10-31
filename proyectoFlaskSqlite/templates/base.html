@@ -8,8 +8,10 @@
     <!-- bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    {% block styles %}   {% endblock styles %}
-    <title>{% block title %} {% endblock %}</title>
+    
+    {% block styles %}   {% endblock styles %}  <!-- BLOQUE DE ESTILOS PARA INCLUIR  -->
+
+    <title>{% block title %} {% endblock %}</title>  <!-- BLOQUE DE TITULO PARA CADA PAGINA  -->
 </head> 
 <body>
     <div class="container-fluid bg-dark text-light text-center p-2">
@@ -18,9 +20,7 @@
         </header>
     </div>
 
-    {% block content %}
-
-    {% endblock %}
+    {% block content %}    {% endblock %} <!-- BLOQUE DE CONTENIDO PARA CADA PAGINA  -->
 
     <footer class="fixed-bottom bg-secondary text-end text-light">
         Project Flask + SQlite
