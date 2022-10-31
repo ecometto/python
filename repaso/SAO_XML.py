@@ -1,3 +1,4 @@
+from gettext import find
 import xml.etree.ElementTree as ET
 import re
 from datetime import datetime
@@ -5,23 +6,26 @@ from datetime import datetime
 file = open("./repaso/SAO.XML")
 lectura=file.read()
 file.seek(0)
-root=ET.parse(file).getroot()
+tree= ET.parse(file)
+root=tree.getroot()
 # print(lectura)
 
-
-for cada in root.iter("activity"):
-    refID=cada[0].text
-    actType=cada[3].text
-    #Obteniendo fecha/hora y calculando diferencia
-    startTime=re.sub("T"," ",cada[5][0].text)
-    sTime=datetime.strptime(startTime,"%Y-%m-%d %H:%M:%S.%f")
-    # print(sTime)
-    endTime=re.sub("T"," ",cada[5][1].text)
-    eTime=datetime.strptime(endTime,"%Y-%m-%d %H:%M:%S.%f")
-    # print(eTime)
-    difTime = (eTime - sTime)
-    # print(f"dif: {difTime}")
-    print(f"Referencia: {refID}: Duración: {difTime}. \n tipo: {actType}\n")
+def main():
+    for cada in root.iter("activity"):
+        refID=cada[0].text
+        actType=cada[3].text
+        #Obteniendo fecha/hora y calculando diferencia
+        startTime=re.sub("T"," ",cada[5][0].text)
+        sTime=datetime.strptime(startTime,"%Y-%m-%d %H:%M:%S.%f")
+        # print(sTime)
+        endTime=re.sub("T"," ",cada[5][1].text)
+        eTime=datetime.strptime(endTime,"%Y-%m-%d %H:%M:%S.%f")
+        # print(eTime)
+        difTime = (eTime - sTime)
+        # print(f"dif: {difTime}")
+        print(f"Referencia: {refID}: Duración: {difTime}. \n tipo: {actType}\n")
+    
+# main()
     
     
     
@@ -45,19 +49,3 @@ for cada in root.iter("activity"):
 # for cada in root.iter("activity"):
 #      print(f"{cada[0].tag}: {cada[0].text} - ActivityType: {cada[3].text}")
 
-
-file = open("./repaso/SAO.xml")
-
-data=ET.parse(file)
-root=data.getroot()
-
-#para visualizar la primera linea de tag HIJOS
-for cada in root:
-    print(cada.tag)
-
-print("-----------")
-#con el dato anterior podemos acceder a cada uno:
-
-todos=Document.getElementsByTagName('activity')
-
-print(todos)

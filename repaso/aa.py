@@ -9,9 +9,9 @@ for each in root.iter("rank"):
     each.set("audit","false") #agregando un atributo
 
 #REMOVING TAG
-for x in root.iter("country"):
-    if int(x.find("rank").text)> 50:
-        root.remove(x)
+# for x in root.iter("country"):
+#     if int(x.find("rank").text)> 50:
+#         root.remove(x)
 
 dataToAdd= '''
     <country name="Panama2">
@@ -32,6 +32,13 @@ for x in root.iter('country'):
     print(year.text)
     if int(year.text) < 2013:
         x.find("rank").text = "Obsolete"
+
+# paises=root.findall("country")
+# for pais in paises:
+#     print( pais[1].text)
+
+for x in root.iter("country"):
+    print(x[0].text)
 
 tree.write("./repaso/aa.xml")
 
