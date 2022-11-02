@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>{% block titulo %}    {% endblock titulo %}</title>
+</head>
+<body>
+    <header class="m-4">
+        <h1 class="bg-primary text-light text-center">SISTEMA DE REGISTRO DE PERSONAS</h1>
+    </header>
+    
+{% block contenido %}
+{% endblock contenido%}
+
+
+<footer class="bg-dark text-light fixed-bottom"> powered by CED</footer>
+</body>
+</html>

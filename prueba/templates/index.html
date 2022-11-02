@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+{% block titulo %}
+{{titulo}}
+{% endblock titulo %}
+
+
+{% block contenido %}
+<div class="d-flex justify-content-end me-2">
+    <a  href="/form">
+        <button class="btn btn-success">NUEVO</button>
+    </a>
+</div>
+<h3 class="m-4 bg-success text-center">DETALLES DE PERSONAS</h3>
+<div class="container">
+    <table class="table table-stripped table-responsive">
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Edad</th>
+                <th>Mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dato in data  %}
+            <tr>
+                <td>{{dato[1]}}</td>
+                <td>{{dato[2]}}</td>
+                <td>{{dato[3]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock contenido %}

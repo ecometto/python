@@ -104,6 +104,7 @@ def deletePage(id):
 @app.route("/edit/<id>", methods=['GET' , 'POST'])
 def editPage(id):
     data=readId(id)
+    print(f" tipo: {type(data)}: {data}")
     if request.method=='POST':
         id=request.form['id']
         nombre= request.form['nombre']
