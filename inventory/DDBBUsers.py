@@ -34,5 +34,6 @@ def validar(user, password):
     sql=f"select * from usuarios where usuario = '{user}' and pass='{password}' "
     cursor.execute(sql)
     data = cursor.fetchall()
+    print(data)
     con.close()
     return data

@@ -1,9 +1,7 @@
-from operator import methodcaller
 from re import U, template
-from flask import Flask, render_template, redirect, url_for
-from flask import request
-import json
 import sqlite3
+from flask import Flask, request, render_template, redirect, url_for
+
 
 app=Flask(__name__)
 
@@ -11,7 +9,7 @@ app=Flask(__name__)
 # DDBB consulting
 def conectar():
     try:
-        con=sqlite3.connect("./proyectoFlaskSqlite/DDBB.sqlite", check_same_thread=False)
+        con=sqlite3.connect("./proyectoFlaskSqlite/DDBB.sqlite") #, check_same_thread=False
         # cursor = con.cursor()
         return con
     except Exception:
@@ -35,7 +33,8 @@ def create(nombre, marca, modelo):
 
 # Getting data -----------
 def read():
-    con=conectar()
+    # con=conectar()
+    con=sqlite3.connect("./proyectoFlaskSqlite\DDBB.sqlite", check_same_thread=False)
     cursor=con.cursor()
     cursor.execute("select * from articulos")
     data = cursor.fetchall()

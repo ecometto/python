@@ -25,6 +25,8 @@ def main():
         print(f"Referencia: {refID}: Duración: {difTime}. \n tipo: {actType}\n")
     
 main()
+
+
     
     
     

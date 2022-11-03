@@ -17,6 +17,11 @@
         <!-- <img src="../static/img/veng.png" alt=""> -->
         <img src="{{url_for('static', filename='img/veng.png')}}" alt="">
         <h1 class="bg-primary text-light text-center">SISTEMA DE INVENTARIOS</h1>
+        <div class="float-end"> 
+            <form action="/close" method="POST">
+                <button class="btn btn-danger">Close Session</button> 
+            </form> 
+        </div>
     </header>
     <div class="contenido container-fluid">
 

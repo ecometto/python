@@ -77,6 +77,12 @@
             "cod": "cdsa",
             "description": "otro mas",
             "price": 1420.0
+        },
+        {
+            "id": 14,
+            "cod": "mouse001",
+            "description": "mouse inalambrico genius g22",
+            "price": 200.0
         }
     ],
     "sales": [
