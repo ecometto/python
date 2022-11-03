@@ -1,4 +1,3 @@
-from gettext import find
 import xml.etree.ElementTree as ET
 import re
 from datetime import datetime
@@ -25,7 +24,7 @@ def main():
         # print(f"dif: {difTime}")
         print(f"Referencia: {refID}: Duración: {difTime}. \n tipo: {actType}\n")
     
-# main()
+main()
     
     
     
