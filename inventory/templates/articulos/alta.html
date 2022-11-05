@@ -16,6 +16,19 @@
         <h3 class="text-center m-2 p-2">FORMULARIO DE INGRESO DE ARTICULOS</h3>
     </div>
 
+{% with resultado = get_flashed_messages() %}
+{% for mensaje in resultado  %}
+
+
+
+  <div id="btn-cerrar" class="alert alert-warning alert-dismissible fade show" >
+    {{mensaje}}
+    <a  href='/altaArticulos' class="btn-close" ></a>
+  </div>
+    
+{% endfor %}
+{% endwith %}
+
     <div class="d-flex justify-content-center text-center">
         <form id="form" action="" class="form bg-secondary mt-4 p-4 rounded w-md-50" method="POST">
             <div class="form-group mb-3">

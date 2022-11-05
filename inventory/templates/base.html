@@ -13,16 +13,22 @@
 </head>
 
 <body>
-    <header class="mt-2 container-fluid">
-        <!-- <img src="../static/img/veng.png" alt=""> -->
-        <img src="{{url_for('static', filename='img/veng.png')}}" alt="">
-        <h1 class="bg-primary text-light text-center">SISTEMA DE INVENTARIOS</h1>
-        <div class="float-end"> 
+    <header class="mt-2 container-fluid d-flex justify-content-between bg-primary text-light text-center">
+
+        <img class="img-fluid m-1" src="{{url_for('static', filename='img/veng.png')}}" alt="" >
+
+        <h1>SISTEMA DE INVENTARIOS</h1>
+
+        <div>
+            User: {{ usuario}}
             <form action="/close" method="POST">
-                <button class="btn btn-danger">Close Session</button> 
-            </form> 
+                <button class="btn btn-danger btn-sm">Close Session</button>
+            </form>
         </div>
+
     </header>
+
+
     <div class="contenido container-fluid">
 
         <div class="container">
@@ -35,6 +41,7 @@
     </div>
 
     <footer class="bg-dark text-light text-end p-2 fixed-bottom"> powered by CED</footer>
+
 
     <!-- <script src="../static/js/js.js"></script> -->
     <script src="{{url_for('static', filename='js/js.js')}}"></script>

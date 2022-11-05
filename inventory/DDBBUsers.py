@@ -17,6 +17,7 @@ def insertUser(usuario, password):
     con.close()
 # insertUser("ecometto@hotmail.com", "123")
 # insertUser("ecometto@vengsa.com.ar", "123")
+# insertUser("123", "123")
 
 def readUsers():
     con=sqlite3.connect("./inventory/usuarios.sqlite", check_same_thread=False)
@@ -37,3 +38,13 @@ def validar(user, password):
     print(data)
     con.close()
     return data
+
+
+def deleteUser(id):
+    con=sqlite3.connect("./inventory/usuarios.sqlite", check_same_thread=False)
+    cursor=con.cursor()
+    sql=f"delete from usuarios where id = {id}"
+    cursor.execute(sql)
+    con.commit()
+    con.close()
+# deleteUser(1)

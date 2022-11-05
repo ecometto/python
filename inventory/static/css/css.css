@@ -1,11 +1,4 @@
-header>img{
-    height: 50px;
-    float: left;
-    margin-left: 20px;
-    margin-top: 5px;
-}
-
-header>h1{
+header{
     height: 60px;
 }
 
@@ -20,3 +13,4 @@ header>h1{
 input{
     min-width: 300px;
 }
+

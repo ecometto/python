@@ -13,7 +13,19 @@
 
 <div class="pt-4">
 
-<div class="bg-light  mt-4 p-4">
+    <div>
+        {%with mensajes=get_flashed_messages() %}
+        {% for mensaje in mensajes %}
+        <div id="btn-cerrar" class="alert alert-warning alert-dismissible fade show">
+            {{mensaje}}
+            <a href='/listadoArticulos' class="btn-close"></a>
+        </div>
+
+        {% endfor %}
+        {% endwith %}
+    </div>
+
+    <div class="bg-light  mt-4 p-4">
         <table class="table">
             <thead class="m-4">
                 <tr>
@@ -24,9 +36,9 @@
                 </tr>
             </thead>
             <tbody class="m-4">
-    
+
                 {% for cada in data %}
-    
+
                 <tr>
                     <td>{{cada[1]}}</td>
                     <td>{{cada[2]}}</td>
@@ -34,18 +46,19 @@
                     <td class="text-center">
                         <form action="" method="POST">
                             <button name="editar" value="{{cada[0]}}" class="btn btn-warning btn-sm m-1">Editar</button>
-                            <button name="eliminar" value="{{cada[0]}}"  class="btn btn-danger btn-sm m-1">Eliminar</button>
+                            <button name="eliminar" value="{{cada[0]}}"
+                                class="btn btn-danger btn-sm m-1">Eliminar</button>
                         </form>
                     </td>
                 </tr>
-    
+
                 {% endfor %}
-    
+
             </tbody>
-    
-    
+
+
         </table>
-</div>
+    </div>
 
 </div>
 

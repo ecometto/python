@@ -48,13 +48,13 @@ def deleteArticles(id):
     print(res)
     return res
 
-def editArticles(id):
+def editArticles(id, descripcion, marca, umedida):
     con=sqlite3.connect("./inventory/articulos.sqlite", check_same_thread=False)
     cursor=con.cursor()
-    sql=f"delete from articulos where id = {id} "
+    sql=f"update articulos set descripcion = '{descripcion}', marca = '{marca}', umedida = '{umedida}' where id = {id} "
     cursor.execute(sql)
     res=cursor.rowcount
+    print("resultado - ", res)    
     con.commit()
     con.close()
-    print(res)
     return res

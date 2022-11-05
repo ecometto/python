@@ -18,9 +18,11 @@
     </div>
 
     <div class="d-flex justify-content-center text-center">
+        
         <form id="form" action="" class="form bg-secondary mt-4 p-4 rounded w-md-50" method="POST">
+            <input type="hidden" name="id" value="{{data[0]}}">
             <div class="form-group mb-3">
-                <label class="form-label" for="descripcion">Nombre del Articulo:
+                <label class="form-label" for="descripcion">Nombre del Articulo a modificar:
                     <input id="descripcion" value="{{data[1]}}" name="descripcion" class="form-control" type="text">
                 </label>
             </div>
@@ -37,9 +39,6 @@
             <div>
                 <button id="boton" class="btn btn-success"> MODIFICAR</button>
             </div>
-            <!-- <div class="reset-container">
-                <button id="reset" class="btn btn-danger">RESET</button>
-            </div> -->
         </form>
     </div>
 </div>
