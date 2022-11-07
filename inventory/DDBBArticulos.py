@@ -11,7 +11,7 @@ from flask import Flask, request
 def insertArticle(descripcion, marca, umedida):
     con=sqlite3.connect("./inventory/articulos.sqlite", check_same_thread=False)
     cursor=con.cursor()
-    sql=f"insert into articulos values(null, '{descripcion}','{marca}', '{umedida}', 1)"
+    sql=f"insert into tablaArticulos values(null, '{descripcion}', '{umedida}', 1)"
     cursor.execute(sql)
     con.commit()
     res=cursor.rowcount
@@ -22,7 +22,7 @@ def insertArticle(descripcion, marca, umedida):
 def readArticles():
     con=sqlite3.connect("./inventory/articulos.sqlite", check_same_thread=False)
     cursor=con.cursor()
-    sql=f"select * from articulos"
+    sql=f"select * from tablaArticulos"
     cursor.execute(sql)
     data = cursor.fetchall()
     con.close()
@@ -31,7 +31,7 @@ def readArticles():
 def readArticle(id):
     con=sqlite3.connect("./inventory/articulos.sqlite", check_same_thread=False)
     cursor=con.cursor()
-    sql=f"select * from articulos where id = {id}"
+    sql=f"select * from tablaArticulos where id = {id}"
     cursor.execute(sql)
     data = cursor.fetchall()
     con.close()
@@ -40,7 +40,7 @@ def readArticle(id):
 def deleteArticles(id):
     con=sqlite3.connect("./inventory/articulos.sqlite", check_same_thread=False)
     cursor=con.cursor()
-    sql=f"delete from articulos where id = {id} "
+    sql=f"delete from tablaArticulos where id = {id} "
     cursor.execute(sql)
     res=cursor.rowcount
     con.commit()
@@ -48,10 +48,10 @@ def deleteArticles(id):
     print(res)
     return res
 
-def editArticles(id, descripcion, marca, umedida):
+def editArticles(id, descripcion, umedida):
     con=sqlite3.connect("./inventory/articulos.sqlite", check_same_thread=False)
     cursor=con.cursor()
-    sql=f"update articulos set descripcion = '{descripcion}', marca = '{marca}', umedida = '{umedida}' where id = {id} "
+    sql=f"update tablaArticulos set descripcion = '{descripcion}', umedida = '{umedida}' where id = {id} "
     cursor.execute(sql)
     res=cursor.rowcount
     print("resultado - ", res)    

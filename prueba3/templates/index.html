@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block  title %}
+{{ titulo }}
+{% endblock  %}
+
+
+{% block content %}
+    
+<button id="boton">click</button>
+<h1>WELCOME TO THE SISTEM</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>REF ID</th>
+            <th>INICIO</th>
+            <th>FINAL</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        {% for datos in data %}
+
+        <tr>
+            <td>{{datos[0]}}</td>
+            <td>{{datos[1]}}</td>
+            <td>{{datos[2]}}</td>
+        </tr>
+            
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock content %}

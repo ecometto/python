@@ -75,10 +75,8 @@ def editarArticulos(id):
         print("enviando")
         id = request.form['id']
         descripcion = request.form['descripcion']
-        marca = request.form['marca']
         umedida = request.form['umedida']
-        print(id, descripcion,  marca, umedida) 
-        res = DDBBArticulos.editArticles(id, descripcion, marca, umedida)
+        res = DDBBArticulos.editArticles(id, descripcion, umedida)
         print(res)
         if res == 1:
             flash("Registro modificado correctamente")

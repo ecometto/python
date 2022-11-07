@@ -1,0 +1,23 @@
+header ul{
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+header li{ text-align: center;
+    margin: 20px;
+    min-width: 80px;
+    list-style: none;
+    padding: 5px;
+    border-radius: 2px;
+    border: solid 1px gray;
+    background: linear-gradient(white , rgba(150,150,150,0.5));
+}
+
+header a{
+    font-weight: 800;
+    color: black ;
+}
+
