@@ -16,10 +16,23 @@ def uploadData(data):
     cursor=con.cursor()
     for cada in data:
         # sql=f"insert into data values ( {cada[0]} , '{cada[1]}' , '{cada[2]}' )"
-        sql=f"insert into data values ( ?, ?, ?, ?, ? )"
-        cursor.execute(sql, ( None, '{cada[0]}' , '{cada[1]}' , '{cada[2]}', '{cada[3]}' ) )
+        sql=f"insert into data values ( null, {cada[0]} , '{cada[1]}' , '{cada[2]}', '{cada[3]}' )"
+        cursor.execute(sql)
     con.commit()
     con.close
+
+def verifyingUser(user, password):
+    con=sqlite3.connect("./prueba3/DDBB.sqlite")
+    cursor=con.cursor()
+    cursor.execute(f"select * from users where name='{user}' and pass='{password}'")
+    data= cursor.fetchone()
+    con.close()
+    print(data)
+    return data
+    
+
+
+
 
 
 #creando nueva tabla (a duplicar / modificar)
@@ -46,12 +59,6 @@ def uploadData(data):
 # con.commit()
 # con.close()
 
-# con = sqlite3.connect("./prueba3/DDBB.sqlite")
-# cursor = con.cursor()
-# sql="alter table data add column Type varchar(50) "
-# cursor.execute(sql)
-# con.commit()
-# con.close()
 
 
 

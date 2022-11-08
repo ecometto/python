@@ -1,12 +1,22 @@
 {% macro header() %}
-    <header>
-        <nav>
+<header>
+    <img class="float-start" src="{{ url_for('static' , filename='./img/veng.png' ) }}" alt="VENG SA" height="60px">
+
+    <h2>SISTEMA DE SEGUIMIENTO DE OPERACIONES</h2>
+    <!-- <nav>
             <ul>
                 <li> <a href="/"> HOME </a></li>
                 <li> <a href="/about"> ABOUT </a></li>
                 <li> <a href="/services"> SERVICES </a></li>
                 <li> <a href="/contact"> CONTACT </a></li>
             </ul>
-        </nav>
-    </header>
+        </nav> -->
+
+    <div class="float-end">
+        <form action="/close" method="POST">
+            <button class="btn btn-danger ">CloseSession</button>
+        </form>
+    </div>
+    
+</header>
 {% endmacro %}

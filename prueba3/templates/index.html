@@ -7,18 +7,20 @@
 
 {% block content %}
     
+<div>
 
+</div>
 <div class="text-center">
     <h1 id="welcome">WELCOME TO THE SISTEM</h1>
 </div>
 
-<table class="table table-striped text-center">
+<table class="table table-striped text-center" id="myTable">
     <thead>
         <tr>
-            <th>REF ID</th>
-            <th>Hora INICIO</th>
-            <th>Hora FINAL</th>
-            <th>TIPO</th>
+            <th class="text-center">REF ID</th>
+            <th class="text-center">Hora INICIO</th>
+            <th class="text-center">Hora FINAL</th>
+            <th class="text-center">TIPO</th>
         </tr>
     </thead>
     <tbody>
@@ -35,5 +37,7 @@
         {% endfor %}
     </tbody>
 </table>
+
+
 
 {% endblock content %}
