@@ -7,16 +7,18 @@ import DDBBProcess
 
 app = Flask(__name__)
 
-# extracting data from the File and storaging in DataBase
+# extracting data from the File 
+data= XML.readFile()
 
-# data= XML.readFile()
-# DDBBProcess.uploadData(data)
+# Clearing DataBase and storaging new data 
+DDBBProcess.clearDDBB()
+DDBBProcess.uploadData(data)
 
 
 #reading database
 con=sqlite3.connect("./prueba3/DDBB.sqlite")
 cursor=con.cursor()
-sql="select * from datos"
+sql="select * from data"
 cursor.execute(sql)
 datos = cursor.fetchall()
 con.close

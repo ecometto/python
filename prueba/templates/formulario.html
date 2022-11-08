@@ -12,6 +12,14 @@
 
     <h3 class="m-4 bg-light text-center">FORMULARIO DE CARGA PERSONAS</h3>
 
+    {% with mensajes=get_flashed_messages() %}
+    {% for m in mensajes: %}
+        <div class="alert alert-primary MSG" role="alert">
+            {{ m }} - <span id="close" >X</span>
+        </div>
+    {% endfor %}
+    {% endwith%}
+
 <div class="container">
     <form class="text-center" action="" method="POST">
         Nombre: <br><input class="mb-4" name="nombre" type="text"> <br>

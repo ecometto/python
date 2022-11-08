@@ -7,14 +7,18 @@
 
 {% block content %}
     
-<button id="boton">click</button>
-<h1>WELCOME TO THE SISTEM</h1>
-<table class="table table-striped">
+
+<div class="text-center">
+    <h1 id="welcome">WELCOME TO THE SISTEM</h1>
+</div>
+
+<table class="table table-striped text-center">
     <thead>
         <tr>
             <th>REF ID</th>
-            <th>INICIO</th>
-            <th>FINAL</th>
+            <th>Hora INICIO</th>
+            <th>Hora FINAL</th>
+            <th>TIPO</th>
         </tr>
     </thead>
     <tbody>
@@ -25,6 +29,7 @@
             <td>{{datos[0]}}</td>
             <td>{{datos[1]}}</td>
             <td>{{datos[2]}}</td>
+            <td>{{datos[3]}}</td>
         </tr>
             
         {% endfor %}

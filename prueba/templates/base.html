@@ -12,12 +12,18 @@
 <body>
     <header class="m-4">
         <h1 class="bg-primary text-light text-center">SISTEMA DE REGISTRO DE PERSONAS</h1>
+        <div>{{session['user']}}</div>
     </header>
+
+    <div class="container mb-5"></div>
     
 {% block contenido %}
 {% endblock contenido%}
 
 
 <footer class="bg-dark text-light fixed-bottom"> powered by CED</footer>
+
+
+<script src="{{url_for('static', filename='js.js')}}"></script>
 </body>
 </html>
