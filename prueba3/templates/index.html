@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block  title %}
+{{ titulo }}
+{% endblock  %}
+
+
+{% block content %}
+    
+<div>
+
+</div>
+<div class="text-center">
+    <h1 id="welcome">WELCOME TO THE SISTEM</h1>
+</div>
+
+<table class="table table-striped text-center" id="myTable">
+    <thead>
+        <tr>
+            <th class="text-center">REF ID</th>
+            <th class="text-center">Hora INICIO</th>
+            <th class="text-center">Hora FINAL</th>
+            <th class="text-center">TIPO</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        {% for datos in data %}
+
+        <tr>
+            <td>{{datos[0]}}</td>
+            <td>{{datos[1]}}</td>
+            <td>{{datos[2]}}</td>
+            <td>{{datos[3]}}</td>
+        </tr>
+            
+        {% endfor %}
+    </tbody>
+</table>
+
+
+
+{% endblock content %}
