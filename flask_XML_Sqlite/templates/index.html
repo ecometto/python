@@ -1,18 +1,27 @@
 {% extends 'base.html' %}
 
-{% block  title %}
+{% block title %}
 {{ titulo }}
-{% endblock  %}
+{% endblock %}
 
 
 {% block content %}
-    
+
 <div>
 
 </div>
 <div class="text-center">
-    <h1 id="welcome">WELCOME TO THE SISTEM</h1>
+    <h1 id="welcome" class="text-success">WELCOME TO THE SISTEM</h1>
 </div>
+
+{% with msg=get_flashed_messages() %}
+    {% if msg: %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            {{ msg[0] }} {{ msg[1]|safe }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endif %}
+{% endwith %}
 
 <table class="table table-striped text-center" id="myTable">
     <thead>
@@ -28,12 +37,12 @@
         {% for datos in data %}
 
         <tr>
-            <td>{{datos[0]}}</td>
             <td>{{datos[1]}}</td>
             <td>{{datos[2]}}</td>
             <td>{{datos[3]}}</td>
+            <td>{{datos[4]}}</td>
         </tr>
-            
+
         {% endfor %}
     </tbody>
 </table>

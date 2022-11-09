@@ -1,10 +1,15 @@
 import sqlite3
 
+rutaDDBB="./flask_XML_Sqlite/DDBB.sqlite"
+
 def clearDDBB():
-    con=sqlite3.connect("./prueba3/DDBB.sqlite")
+    con=sqlite3.connect(rutaDDBB)
     cursor=con.cursor()
     sql=f"delete from data"
     cursor.execute(sql)
+    con.commit()
+    resetId="UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='data'"
+    cursor.execute(resetId)
     con.commit()
     con.close
     
@@ -12,25 +17,42 @@ def clearDDBB():
 
 
 def uploadData(data):
-    con=sqlite3.connect("./prueba3/DDBB.sqlite")
+    con=sqlite3.connect(rutaDDBB)
     cursor=con.cursor()
     for cada in data:
-        # sql=f"insert into data values ( {cada[0]} , '{cada[1]}' , '{cada[2]}' )"
         sql=f"insert into data values ( null, {cada[0]} , '{cada[1]}' , '{cada[2]}', '{cada[3]}' )"
         cursor.execute(sql)
     con.commit()
     con.close
 
+
 def verifyingUser(user, password):
-    con=sqlite3.connect("./prueba3/DDBB.sqlite")
+    con=sqlite3.connect(rutaDDBB)
     cursor=con.cursor()
     cursor.execute(f"select * from users where name='{user}' and pass='{password}'")
     data= cursor.fetchone()
     con.close()
-    print(data)
     return data
     
 
+def readData():
+    con=sqlite3.connect(rutaDDBB)
+    cursor=con.cursor()
+    sql="select * from data"
+    cursor.execute(sql)
+    datos = cursor.fetchall()
+    con.close
+    return datos
+
+def readPartialData():
+    con=sqlite3.connect(rutaDDBB)
+    cursor=con.cursor()
+    sql="select * from data where Type LIKE '%DataTake%'" 
+    cursor.execute(sql)
+    datos = cursor.fetchall()
+    con.close
+    return datos
+readPartialData()
 
 
 

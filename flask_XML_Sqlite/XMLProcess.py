@@ -1,7 +1,8 @@
 import xml.etree.ElementTree as ET
 
+XMLPath='./flask_XML_Sqlite/SAO.XML'
 def readFile():
-    with open('./prueba3/SAO.XML') as f:
+    with open(XMLPath) as f:
         tree= ET.parse(f)
         root=tree.getroot()
 
