@@ -16,7 +16,6 @@ with open(XMLPath) as file:
             year=int(cada[1].text)
             if  year > 2011:
                 cada[1].set('status', 'NEW')
-                print(cada[1].attrib['status'])
 
     tree.write('./repaso/xml.xml')
 
