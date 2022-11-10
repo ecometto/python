@@ -12,16 +12,23 @@
 <body>
   <div class="container">
 
-        <h1 class="text-center mt-4">LOGIN DE USUARIOS</h1>
+        <div>
+            
+            <h1 class="text-center mt-4"><img  class="" src="{{url_for('static', filename='img/veng.png')}}" alt="" height="50px"> LOGIN DE USUARIOS</h1>
+        </div>
+
+        <div class=" text-center m-4">
+            <img  class="rounded rounded-circle" src="{{url_for('static', filename='img/user.webp')}}" alt="" height="100px">
+        </div>
 
         <div class="row  ">
             <form class="col-md-6 offset-md-3 text-center py-4 bg-light rounded-4" action="" method="POST" >
                 <label for="user">Nombre Usuario:
-                    <input class="form-control" type="text" name="user" id="user">
+                    <input autocomplete="off" class="form-control" type="text" name="user" id="user">
                 </label> 
                 <br> <br>
                 <label for="password"> Password:
-                    <input class="form-control" type="password" id="password" name="password">
+                    <input autocomplete="off" class="form-control" type="password" id="password" name="password">
                 </label>
                 <br> <br>
                 <button class="btn btn-primary mb-2">Ingresar</button>

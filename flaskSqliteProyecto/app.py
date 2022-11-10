@@ -9,7 +9,7 @@ app=Flask(__name__)
 # DDBB consulting
 def conectar():
     try:
-        con=sqlite3.connect("./proyectoFlaskSqlite/DDBB.sqlite") #, check_same_thread=False
+        con=sqlite3.connect("./flaskSqliteProyecto/DDBB.sqlite") #, check_same_thread=False
         # cursor = con.cursor()
         return con
     except Exception:
@@ -34,7 +34,7 @@ def create(nombre, marca, modelo):
 # Getting data -----------
 def read():
     # con=conectar()
-    con=sqlite3.connect("./proyectoFlaskSqlite\DDBB.sqlite", check_same_thread=False)
+    con=sqlite3.connect("./flaskSqliteProyecto/DDBB.sqlite", check_same_thread=False)
     cursor=con.cursor()
     cursor.execute("select * from articulos")
     data = cursor.fetchall()

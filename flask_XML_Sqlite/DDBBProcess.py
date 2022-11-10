@@ -52,8 +52,14 @@ def readPartialData():
     datos = cursor.fetchall()
     con.close
     return datos
-readPartialData()
+# readPartialData()
 
+con=sqlite3.connect(rutaDDBB)
+cursor=con.cursor()
+sql="update users set name='user', pass='123' where id=2" 
+cursor.execute(sql)
+con.commit()
+con.close
 
 
 
