@@ -11,13 +11,10 @@
 
         <style>
             #userImg{
-                height:100px;
-                width: 100px;
+                height:80px;
                 border-radius: 50%;
-                margin: auto;
-                margin-bottom: 30px;
+                margin-bottom: 30px;;
             }
-
         </style>
     <title>Document</title>
 </head>
@@ -25,20 +22,18 @@
 <body>
 
     <div class="container d-flex justify-content-center mt-5 text-center">
-        <div class="d-flex flex-column bg-secondary border-4 p-3">
-
+        <div class="d-flex flex-column bg-light border-4 p-3">
             <h3 class="p-4">FORMULARIO DE LOGIN</h3>
-
-            <img id="userImg" src="/static/img/user.webp" alt="">
-
+            <div >
+                <img id="userImg" src="{{url_for('static', filename='/img/user.webp')}}" alt="" >
+            </div>
             <form action="" method="POST">
                 Usuario: <br> 
                 <input name="user" class="form-control " type="text"> <br>
                 Clave: <br>
                 <input name="pass" class="form-control " type="password"> <br>
-                <button class="btn btn-primary" >Login</button>
+                <button class="btn btn-secondary" >Login</button>
             </form>
-            
         </div>
     </div>
 

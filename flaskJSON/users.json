@@ -1,0 +1,8 @@
+{
+    "users":[
+        {"nombre": "ecometto", "pass":"123", "type": "admin"},
+        {"nombre": "admin", "pass":"admin", "type": "admin"},
+        {"nombre": "user", "pass":"user", "type": "user"},
+        {"nombre": "otro", "pass":"123", "type": "user"}
+    ]
+}
