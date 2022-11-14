@@ -16,7 +16,7 @@ def downloadingData():
         
 #geting data"""FROM JSON FILE"""
 def getData():
-    ruta="./flaskJSON/countries.json"
+    ruta="./flaskJSON_API/countries.json"
     with open(ruta) as file:
         users= json.load(file)
         return users
@@ -42,7 +42,7 @@ def search(country):
 
 #validando usuario
 def validarUser(user, passw):
-    file="./flaskJSON/users.json"
+    file="./flaskJSON_API/users.json"
     with open(file) as f:
         users= json.load(f)
         for cada in users['users']:
