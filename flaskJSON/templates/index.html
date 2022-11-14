@@ -16,7 +16,7 @@
 <div class="container">
     <h1 class="text-center">LISTA DE PAISES Y CAPITALES</h1>
     <form class="float-end d-flex " action="search" method="POST">
-        <input class="form-control mx-1" type="text" placeholder="buscar...">
+        <input name="country" class="form-control mx-1" type="text" placeholder="buscar...">
         <button class="btn btn-secondary">Buscar</button>
     </form>
     <!-- <img src="/static/img/veng.png" alt=""> -->
@@ -29,13 +29,27 @@
             </tr>
         </thead>
         <tbody>
-            {% for cada in data %}
+            {% if data|length == 0 %}
+
                 <tr>
-                    <td>{{ cada['name'] }}</td>
-                    <td>{{ cada['capital'] }}</td>
-                    <td>{{ cada['population'] }}</td>
+                    <td>
+                        No hay datos para mostrar
+                    </td>    
                 </tr>
-            {% endfor %}
+                
+            {% else %}
+
+                {% for cada in data %}
+                    <tr>
+                        <td>{{ cada['name'] }}</td>
+                        <td>{{ cada['capital'] }}</td>
+                        <td>{{ cada['population'] }}</td>
+                    </tr>
+                {% endfor %}
+
+            {% endif %}
+
+           
         </tbody>
     </table>
 </div>

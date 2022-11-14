@@ -23,36 +23,22 @@ def getData():
 
 
 # def searchCountry(country):
-#     data=getData()
-#     for cada in data:
-#        res= re.search(country, cada['name'], re.IGNORECASE)
-#        if res:
-#            print(res)
-# searchCountry("argentina")
 
-# datos=getData()
-# def pares(country):
-#         if "Argentina" in country['name']:
-#             return country['name']
+def search(country):
+    data = getData()
+    res = []
+    # result = filter(searchCountry(country), data)
+    for cada in data:
+        if country.lower() in cada['name'].lower():
+            print("finded", cada['name'])
+            res.append(cada)
+    return res
+         
     
-# new= map(pares, datos)
-# for cada in new:
-#     # print(list(cada))
-#     print(cada)
+# def searchCountry(data, country):
+#     if country in data['name']:
+#         return data
 
-# Return double of n
-def addition(n):
-    if "Ar" in n['name']:
-        return n
-    else:
-        return ""
-  
-# We double all numbers using map()
-numbers = getData()
-result = filter(addition, numbers)
-# print(list(result))
-for cada in result:
-    print(cada['name'])
 
 #validando usuario
 def validarUser(user, passw):

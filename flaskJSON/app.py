@@ -42,7 +42,12 @@ def logout():
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():
-    pass
+    country=request.form['country']
+    filteredList = ProcessJSON.search(country)
+
+    
+    return render_template('index.html', title="Principal", data=filteredList)
+
 
 
 
