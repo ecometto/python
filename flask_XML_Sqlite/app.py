@@ -37,14 +37,17 @@ def login():
     if request.method == "POST":
         user=request.form['user']
         password=request.form['password']
-        res = DDBBProcess.verifyingUser(user, password)
-        session['user']= res[1]
-        session['type']= res[3]
+        res = DDBBProcess.verifyingEncriptedUser(user, password)
+        print(res)
         if res != None:
+            session['user']= res[1]
+            session['type']= res[3]
             return redirect('/')
 
+        mensaje= flash("Error en los datos ingresados.")
+        return render_template('login.html', mensaje=mensaje)
+    
     return render_template('login.html')
-
 
 @app.route('/')
 def index():
@@ -55,7 +58,7 @@ def index():
             flash("Ud tiene permisos de usuario con tiene privilegios limitados")
             flash("<a href='/login'>Loguearse como admin</a>")
 
-    return render_template('index.html', data=data, user=session['user'])
+    return render_template('index.html', data=data, user=session['user'], type=session['type'])
 
 
 @app.route('/close', methods=['POST'])
@@ -63,7 +66,17 @@ def close():
     session.clear()
     return redirect('/login')
 
-
+@app.route('/users', methods=['GET', 'POST'])
+def users():
+    if request.method == "POST":
+        name=request.form['name']
+        passw=request.form['pass']
+        type=request.form['type']
+        res= DDBBProcess.addUser(name, passw, type)
+        if res == 1:
+            print(res)
+        
+    return render_template('users.html', titulo="UserAdmin")
 
 if __name__ == '__main__':
     app.run(port=8000, debug=True)

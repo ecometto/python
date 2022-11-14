@@ -1,4 +1,6 @@
 import sqlite3
+from werkzeug.security import generate_password_hash, check_password_hash
+from flask import flash
 
 rutaDDBB="./flask_XML_Sqlite/DDBB.sqlite"
 
@@ -24,16 +26,7 @@ def uploadData(data):
         cursor.execute(sql)
     con.commit()
     con.close
-
-
-def verifyingUser(user, password):
-    con=sqlite3.connect(rutaDDBB)
-    cursor=con.cursor()
-    cursor.execute(f"select * from users where name='{user}' and pass='{password}'")
-    data= cursor.fetchone()
-    con.close()
-    return data
-    
+   
 
 def readData():
     con=sqlite3.connect(rutaDDBB)
@@ -43,6 +36,7 @@ def readData():
     datos = cursor.fetchall()
     con.close
     return datos
+
 
 def readPartialData():
     con=sqlite3.connect(rutaDDBB)
@@ -54,12 +48,50 @@ def readPartialData():
     return datos
 # readPartialData()
 
+
+def verifyingUser(user, password):
+    con=sqlite3.connect(rutaDDBB)
+    cursor=con.cursor()
+    cursor.execute(f"select * from users where name='{user}' and pass='{password}'")
+    data= cursor.fetchone()
+    con.close()
+    return data
+
+def verifyingEncriptedUser(user, password):
+    con=sqlite3.connect(rutaDDBB)
+    cursor=con.cursor()
+    cursor.execute(f"select * from users where name='{user}'")
+    data= cursor.fetchone()
+    if not data is None:
+        if  check_password_hash(data[2], password):
+            con.close()
+            return data
+        
+def addUser(name, passw, type):
+    con=sqlite3.connect(rutaDDBB)
+    cursor=con.cursor()
+    cursor.execute('select name from users')
+    users=cursor.fetchall()
+    for cada in users:
+        if name == cada[0]:
+            return 0
+        
+    passw=generate_password_hash(passw)
+    cursor.execute(f"insert into users values(NULL, '{name}','{passw}','{type}')")
+    res=cursor.rowcount
+    con.commit()
+    con.close()
+    return res
+
+    
+
 con=sqlite3.connect(rutaDDBB)
 cursor=con.cursor()
-sql="update users set name='user', pass='123' where id=2" 
+sql="update users set pass='pbkdf2:sha256:260000$dZgrdYyAB5ai7QOu$13cecafba866bf99912e3afbedb923703d780c9236411e730d0d5d430be0d2c7' where id=2" 
 cursor.execute(sql)
 con.commit()
 con.close
+
 
 
 

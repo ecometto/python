@@ -7,12 +7,16 @@
 
 {% block content %}
 
-<div>
-
-</div>
 <div class="text-center">
     <h1 id="welcome" class="text-success">WELCOME TO THE SISTEM</h1>
 </div>
+
+{% if session['type'] == 'admin' %}  
+    <div class="float-end">
+        <a href="/users" class="btn btn-info m-2">Admin Users</a>
+    </div>
+{% endif %}
+
 
 {% with msg=get_flashed_messages() %}
     {% if msg: %}

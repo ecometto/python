@@ -44,7 +44,9 @@ def logout():
 def search():
     country=request.form['country']
     filteredList = ProcessJSON.search(country)
-
+    for cada in filteredList:
+        print(cada)
+        print(cada['flag'][1])
     
     return render_template('index.html', title="Principal", data=filteredList)
 

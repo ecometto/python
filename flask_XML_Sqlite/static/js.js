@@ -1,14 +1,14 @@
 $(document).ready(function () {
     $('#myTable').DataTable();
-    
-    // desaparecer salido 
+
+    // desaparecer saludo 
     saludo = document.querySelector('#welcome')
-    setTimeout(() =>
+    setTimeout(() => {
         saludo.classList.toggle('hide')
-        // saludo.style.display = 'none'
+        setTimeout(() => saludo.style.display = 'none', 200)
+    }
         , 2000
     )
-
 
 
 });
