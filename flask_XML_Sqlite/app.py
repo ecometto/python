@@ -49,10 +49,10 @@ def login():
     
     return render_template('login.html')
 
+
 @app.route('/')
 def index():
-    if 'type' in session:
-        
+    if 'type' in session:        
         data=getData(session['type'])
         if session['type'] != "admin":
             flash("Ud tiene permisos de usuario con tiene privilegios limitados")
@@ -66,17 +66,34 @@ def close():
     session.clear()
     return redirect('/login')
 
+
 @app.route('/users', methods=['GET', 'POST'])
 def users():
+    users = DDBBProcess.readUsers()
+    
     if request.method == "POST":
         name=request.form['name']
         passw=request.form['pass']
         type=request.form['type']
         res= DDBBProcess.addUser(name, passw, type)
         if res == 1:
-            print(res)
+            flash("usuario registrado correctamente")
+        if res == 0:
+            flash ("Error: Usuario duplicado")
         
-    return render_template('users.html', titulo="UserAdmin")
+        users = DDBBProcess.readUsers()
+        return render_template('users.html', titulo="UserAdmin", users=users)
+
+
+    if request.method == "GET":
+        id = request.args.get('eliminar')
+        DDBBProcess.deleteUser(id)
+        users = DDBBProcess.readUsers()            
+        return render_template('users.html', titulo="UserAdmin", users=users)
+
+    return render_template('users.html', titulo="UserAdmin", users=users)
+
+
 
 if __name__ == '__main__':
     app.run(port=8000, debug=True)

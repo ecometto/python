@@ -13,7 +13,7 @@ def clearDDBB():
     resetId="UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='data'"
     cursor.execute(resetId)
     con.commit()
-    con.close
+    con.close()
     
 # clearDDBB()
 
@@ -25,7 +25,7 @@ def uploadData(data):
         sql=f"insert into data values ( null, {cada[0]} , '{cada[1]}' , '{cada[2]}', '{cada[3]}' )"
         cursor.execute(sql)
     con.commit()
-    con.close
+    con.close()
    
 
 def readData():
@@ -34,7 +34,7 @@ def readData():
     sql="select * from data"
     cursor.execute(sql)
     datos = cursor.fetchall()
-    con.close
+    con.close()
     return datos
 
 
@@ -44,19 +44,12 @@ def readPartialData():
     sql="select * from data where Type LIKE '%DataTake%'" 
     cursor.execute(sql)
     datos = cursor.fetchall()
-    con.close
+    con.close()
     return datos
 # readPartialData()
 
 
-def verifyingUser(user, password):
-    con=sqlite3.connect(rutaDDBB)
-    cursor=con.cursor()
-    cursor.execute(f"select * from users where name='{user}' and pass='{password}'")
-    data= cursor.fetchone()
-    con.close()
-    return data
-
+#  USERS ----------------------------------- 
 def verifyingEncriptedUser(user, password):
     con=sqlite3.connect(rutaDDBB)
     cursor=con.cursor()
@@ -67,6 +60,7 @@ def verifyingEncriptedUser(user, password):
             con.close()
             return data
         
+
 def addUser(name, passw, type):
     con=sqlite3.connect(rutaDDBB)
     cursor=con.cursor()
@@ -83,8 +77,24 @@ def addUser(name, passw, type):
     con.close()
     return res
 
+def readUsers():
+    con=sqlite3.connect(rutaDDBB)
+    cursor=con.cursor()
+    sql="select * from users" 
+    cursor.execute(sql)
+    datos = cursor.fetchall()
+    con.close()
+    return datos
     
-
+def deleteUser(id):
+    con=sqlite3.connect(rutaDDBB)
+    cursor=con.cursor()
+    sql=f"delete from users where id={id}" 
+    res1=cursor.execute(sql)
+    res2=con.commit()
+    con.close()
+    
+    
 con=sqlite3.connect(rutaDDBB)
 cursor=con.cursor()
 sql="update users set pass='pbkdf2:sha256:260000$dZgrdYyAB5ai7QOu$13cecafba866bf99912e3afbedb923703d780c9236411e730d0d5d430be0d2c7' where id=2" 
