@@ -23,11 +23,11 @@
     <table id="myTable" class="table">
         <thead>
             <tr>
-                <th>flag</th>
                 <th>country</th>
                 <th>capital</th>
                 <th>poblacion</th>
                 <th>region</th>
+                <th>flag</th>
             </tr>
         </thead>
         <tbody>
@@ -43,11 +43,11 @@
 
                 {% for cada in data %}
                     <tr>
-                        <td><a target="_blank" href="{{ cada['flag']}}"> {{ cada['flag']}} </a></td>
                         <td>{{ cada['name'] }}</td>
                         <td>{{ cada['capital'] }}</td>
                         <td>{{ cada['population'] }}</td>
                         <td>{{ cada['region'] }}</td>
+                        <td><a target="_blank" href="{{ cada['flag']}}"> {{ cada['flag']}} </a></td>
                     </tr>
                 {% endfor %}
 
