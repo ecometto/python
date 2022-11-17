@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request, redirect
+from flask import Flask, render_template, jsonify, request, redirect, Response
 import json
 import requests
 import operator
@@ -8,14 +8,13 @@ app = Flask(__name__)
 
 
 
-
 # routes ---------- 
 @app.route('/', methods=['GET', 'POST', 'DELETE'])
 def index():
     data= requests.get('http://127.0.0.1:3000/backend/data')
+    print(data)
     data=data.json()
     return render_template('index.html', data=data)
-
 
 
 
