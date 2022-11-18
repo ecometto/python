@@ -6,7 +6,8 @@ import re
 #obteniendo datos de API y almacendando en archivo JSON
 def downloadingData():
     ruta="./flaskJSON/countries.json"
-    url="https://restcountries.com/v2/all"
+    # ruta="./flaskJSON/countries.json"
+    url="localhost:8000/data"
     data=requests.get(url)
     data=data.json()
 
