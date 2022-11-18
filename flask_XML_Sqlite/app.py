@@ -70,12 +70,12 @@ def close():
 @app.route('/users', methods=['GET', 'POST'])
 def users():
     users = DDBBProcess.readUsers()
-    
     if request.method == "POST":
         name=request.form['name']
         passw=request.form['pass']
         type=request.form['type']
         res= DDBBProcess.addUser(name, passw, type)
+        print(res)
         if res == 1:
             flash("usuario registrado correctamente")
         if res == 0:
@@ -83,17 +83,16 @@ def users():
         
         users = DDBBProcess.readUsers()
         return render_template('users.html', titulo="UserAdmin", users=users)
-
-
-    if request.method == "GET":
-        id = request.args.get('eliminar')
-        DDBBProcess.deleteUser(id)
-        users = DDBBProcess.readUsers()            
-        return render_template('users.html', titulo="UserAdmin", users=users)
+        # redirect('/users')
 
     return render_template('users.html', titulo="UserAdmin", users=users)
 
-
+@app.route('/users/delete/<id>', methods=['GET', 'POST'])
+def deleteUsers(id):
+        DDBBProcess.deleteUser(id)
+        users = DDBBProcess.readUsers()            
+        return redirect('/users')
+        # return render_template('users.html', titulo="UserAdmin", users=users)
 
 if __name__ == '__main__':
     app.run(port=8000, debug=True)

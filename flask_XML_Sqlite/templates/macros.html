@@ -1,7 +1,11 @@
 {% macro header() %}
-<header>
-    <img class="float-start" src="{{ url_for('static' , filename='./img/veng.png' ) }}" alt="VENG SA" height="60px">
 
+<header>
+
+    <a href="/" class="link-dark">
+        <img class="float-start" src="{{ url_for('static' , filename='./img/veng.png' ) }}" alt="VENG SA" height="60px">
+        <br>HOME
+    </a>
     <h2>SISTEMA DE SEGUIMIENTO DE OPERACIONES</h2>
 
     <div class="float-end">
@@ -11,7 +15,6 @@
                 <button class="btn btn-danger mx-2">Close</button>
             </form>
  
-      
     </div>
     
 </header>

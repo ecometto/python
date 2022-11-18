@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import re
 from datetime import datetime
 
-file = open("./repaso/SAO.XML")
+file = open("SAO.XML")
 lectura=file.read()
 file.seek(0)
 tree= ET.parse(file)
@@ -25,7 +25,6 @@ def main():
         print(f"Referencia: {refID}: Duración: {difTime}. \n tipo: {actType}\n")
     
 main()
-
 
     
     
