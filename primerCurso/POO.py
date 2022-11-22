@@ -39,7 +39,9 @@ al1 = Alumnos("Garcia", "pedro",2, "ninguna")
 al1.materias.append("ingles")                                   #se agrega solo un item a la lista
 al1.materias.extend(["ciencias","geografia", "mat", "lengua"])  #se agregan varios items a la lista
 
-print(al1.materias)
+print(f" las materias son: .............. , {al1.materias}")
+print(f" Mostrando datos: \n {Alumnos.mostrar_datos(al1)}")
+
 
 al1.materias.remove("mat")
 
@@ -48,47 +50,47 @@ print(al1.universidad)
 
 print("***************************")
 
-class AlumnosVisita(Alumnos):
-    universidad = "OTRAS"
-    def __init__(self, apellido, nombre, curso, materias, procedencia):
-        self.procedencia = procedencia
-        super().__init__(apellido, nombre, curso, materias)
+# class AlumnosVisita(Alumnos):
+#     universidad = "OTRAS"
+#     def __init__(self, apellido, nombre, curso, materias, procedencia):
+#         self.procedencia = procedencia
+#         super().__init__(apellido, nombre, curso, materias)
 
-    def mostrar_datos(self):
-        super().mostrar_datos()
-        print("la procedencia del alumno es: ", self.procedencia)
+#     def mostrar_datos(self):
+#         super().mostrar_datos()
+#         print("la procedencia del alumno es: ", self.procedencia)
 
-al2 = AlumnosVisita("Correa", "rafael", 5,[], "Alemania")
-al3 = AlumnosVisita("juarez", "pedri", 4,["mat"], "noruega")
-al4 = AlumnosVisita("rodriguez", "raaul", 3,["lengua","idiomas"], "espana")
+# al2 = AlumnosVisita("Correa", "rafael", 5,[], "Alemania")
+# al3 = AlumnosVisita("juarez", "pedri", 4,["mat"], "noruega")
+# al4 = AlumnosVisita("rodriguez", "raaul", 3,["lengua","idiomas"], "espana")
 
-print("el alumno ", al2.apellido,
-      "proviene de la Universidad", al2.universidad, "y viene de "
-      , al2.procedencia) #ver que imprime la universidad por defecto para la subclase, agrega la procedencia y hereda los demas atributos.
-print("--------------------")
-al2.mostrar_datos()
-print("--------------------")
-al3.mostrar_datos()
+# print("el alumno ", al2.apellido,
+#       "proviene de la Universidad", al2.universidad, "y viene de "
+#       , al2.procedencia) #ver que imprime la universidad por defecto para la subclase, agrega la procedencia y hereda los demas atributos.
+# print("--------------------")
+# al2.mostrar_datos()
+# print("--------------------")
+# al3.mostrar_datos()
 
-# POLIMORFISMO.................. UN OBJETO PUEDE TOMAR MAS DE UNA FORMA
-class Coche():
-    def desplazamiento(self):
-        print("me desplazo en cuatro ruedas")
-class Moto():
-    def desplazamiento(self):
-        print("me desplazo en dos ruedas")
-class Camion():
-    def desplazamiento(self):
-        print("me desplazo en ocho ruedas")
-miVehiculo = Moto()
-#mi_vehiculo.desplazamiento()
-miVehiculo2 = Coche()
-miVehiculo3 = Camion()
+# # POLIMORFISMO.................. UN OBJETO PUEDE TOMAR MAS DE UNA FORMA
+# class Coche():
+#     def desplazamiento(self):
+#         print("me desplazo en cuatro ruedas")
+# class Moto():
+#     def desplazamiento(self):
+#         print("me desplazo en dos ruedas")
+# class Camion():
+#     def desplazamiento(self):
+#         print("me desplazo en ocho ruedas")
+# miVehiculo = Moto()
+# #mi_vehiculo.desplazamiento()
+# miVehiculo2 = Coche()
+# miVehiculo3 = Camion()
 
-#Se crea una funcion (metodo) que englobara los 3 metodos anteriores
-def desplazamiento_vehiculos(vehiculo):
-    vehiculo.desplazamiento()
+# #Se crea una funcion (metodo) que englobara los 3 metodos anteriores
+# def desplazamiento_vehiculos(vehiculo):
+#     vehiculo.desplazamiento()
 
-desplazamiento_vehiculos(miVehiculo)
-desplazamiento_vehiculos(miVehiculo2)
-desplazamiento_vehiculos(miVehiculo3)
+# desplazamiento_vehiculos(miVehiculo)
+# desplazamiento_vehiculos(miVehiculo2)
+# desplazamiento_vehiculos(miVehiculo3)
