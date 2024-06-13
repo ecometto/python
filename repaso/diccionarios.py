@@ -13,7 +13,7 @@ print(f"El Sr. {dict2['nombre']} tiene {dict2['edad']}. Vive en {dict2['direccio
 # opcion 3:
 dictNotas={"edy": 95, "romulo": 40, "Ceci":90, "Lila": 83}
 
-#CORMAS DE ITERAR DICCIONARIOS:
+#FORMAS DE ITERAR DICCIONARIOS:
 for claves in dictNotas.keys(): # si no se especifica, itera las claves (KEYS)    
     print(f"Alumno {claves}: {dictNotas[claves]}")
 
