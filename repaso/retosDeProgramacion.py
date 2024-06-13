@@ -93,12 +93,11 @@ def anagrama(s1,s2):
             dictS2[letra] = 1
             
     for claveS1, valorS1 in dictS1.items():
-            if claveS1 not in dictS2.keys() or dictS1[claveS1] != dictS2[claveS1]:
-                anagrama = False  
+        if claveS1 not in dictS2.keys() or dictS1[claveS1] != dictS2[claveS1]:
+            anagrama = False  
 
     return anagrama
          
 print(anagrama(str1, str2))
+ 
  '''
- 
- 
