@@ -1,5 +1,5 @@
 '''
-/*
+/* MULTIPLOS SI O NO
  * Escribe un programa que muestre por consola (con un print) los
  * números de 1 a 100 (ambos incluidos y con un salto de línea entre
  * cada impresión), sustituyendo los siguientes:
@@ -21,7 +21,7 @@
     
     
 '''
-/*
+/* LENGUAJE HACKER
  * Escribe un programa que reciba un texto y transforme lenguaje natural a
  * "lenguaje hacker" (conocido realmente como "leet" o "1337"). Este lenguaje
  *  se caracteriza por sustituir caracteres alfanuméricos.
@@ -59,7 +59,7 @@ print(myString)
 
 
 '''
-/*
+/* ANAGRAMA
  * Escribe una función que reciba dos palabras (String) y retorne
  * verdadero o falso (Bool) según sean o no anagramas.
  * - Un Anagrama consiste en formar una palabra reordenando TODAS
@@ -95,9 +95,8 @@ def anagrama(s1,s2):
     for claveS1, valorS1 in dictS1.items():
         if claveS1 not in dictS2.keys() or dictS1[claveS1] != dictS2[claveS1]:
             anagrama = False  
-
     return anagrama
-         
+        
 print(anagrama(str1, str2))
  
  '''
@@ -105,7 +104,7 @@ print(anagrama(str1, str2))
 
 
 
-'''
+''' SUCESION DE FIBONACCI
  * Escribe un programa que imprima los 50 primeros números de la sucesión
  * de Fibonacci empezando en 0.
  * - La serie Fibonacci se compone por una sucesión de números en
@@ -116,24 +115,21 @@ def fibo (n):
     fibo = 0
     fiboAnterior = 1
     fiboAnteAnterior = 0
-    
     for n in range (0 , n):
         if n < 2:
             fibo = n
         if n > 1:
             fibo = fiboAnterior + fiboAnteAnterior 
             fiboAnteAnterior = fiboAnterior
-            fiboAnterior = fibo
-            
+            fiboAnterior = fibo       
         print("fibo ",fibo)
-        
         
 fibo(10)
 
 '''
 
 
-'''
+''' NUMEROS PRIMOS SI O NO
  * Escribe un programa que se encargue de comprobar si un número es o no primo.
  * Hecho esto, imprime los números primos entre 1 y 100.
 def primos(num):
@@ -147,8 +143,7 @@ def primos(num):
                 resto = n % cada
                 if resto == 0:
                     primo = False
-                    break
-                      
+                    break                      
             if primo == False:
                 numeros.append(n) 
                 print(f"El numero {n} no es primo.")
@@ -158,3 +153,85 @@ def primos(num):
                     
 primos(20)
 '''
+
+
+
+
+
+'''
+/* AREA POLIGONO...
+ * Crea una única función (importante que sólo sea una) que sea capaz
+ * de calcular y retornar el área de un polígono.
+ * - La función recibirá por parámetro sólo UN polígono a la vez.
+ * - Los polígonos soportados serán Triángulo, Cuadrado y Rectángulo.
+ * - Imprime el cálculo del área de un polígono de cada tipo.
+ */
+
+def areaPoligono(poligono, base, altura):
+    if poligono == "t":
+        return base*altura/2
+    else:
+        return base*altura
+ 
+print(areaPoligono("t",10,5))
+print(areaPoligono("c",10,10))
+print(areaPoligono("r",10,5))
+'''
+ 
+
+
+
+'''
+/* INVIRTIENDO CADENAS
+ * Crea un programa que invierta el orden de una cadena de texto
+ * sin usar funciones propias del lenguaje que lo hagan de forma automática.
+ * - Si le pasamos "Hola mundo" nos retornaría "odnum aloH"
+ */
+ '''
+def invertirCadena(string):
+    inverted = ""
+    for n in range (len(string)-1, -1, -1):
+        inverted += string[n]
+    return inverted
+
+def invertirCadenaArray(string):
+    
+    
+print(invertirCadena("hola"))
+ 
+'''
+ /* CONTANDO PALABRAS
+ * Crea un programa que cuente cuantas veces se repite cada palabra
+ * y que muestre el recuento final de todas ellas.
+ * - Los signos de puntuación no forman parte de la palabra.
+ * - Una palabra es la misma aunque aparezca en mayúsculas y minúsculas.
+ * - No se pueden utilizar funciones propias del lenguaje que
+ *   lo resuelvan automáticamente.
+ */
+'''
+ 
+ 
+ 
+ 
+'''
+ /* DECIMAL A BINARIO
+ * Crea un programa se encargue de transformar un número
+ * decimal a binario sin utilizar funciones propias del lenguaje que lo hagan directamente.
+ */
+ '''
+ 
+ 
+ 
+ 
+'''
+ /* CODIGO MORSE
+ * Crea un programa que sea capaz de transformar texto natural a código
+ * morse y viceversa.
+ * - Debe detectar automáticamente de qué tipo se trata y realizar
+ *   la conversión.
+ * - En morse se soporta raya "—", punto ".", un espacio " " entre letras
+ *   o símbolos y dos espacios entre palabras "  ".
+ * - El alfabeto morse soportado será el mostrado en
+ *   https://es.wikipedia.org/wiki/Código_morse.
+ */
+ '''
