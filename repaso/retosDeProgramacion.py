@@ -101,3 +101,60 @@ def anagrama(s1,s2):
 print(anagrama(str1, str2))
  
  '''
+ 
+
+
+
+'''
+ * Escribe un programa que imprima los 50 primeros números de la sucesión
+ * de Fibonacci empezando en 0.
+ * - La serie Fibonacci se compone por una sucesión de números en
+ *   la que el siguiente siempre es la suma de los dos anteriores.
+ *   0, 1, 1, 2, 3, 5, 8, 13...
+ 
+def fibo (n):
+    fibo = 0
+    fiboAnterior = 1
+    fiboAnteAnterior = 0
+    
+    for n in range (0 , n):
+        if n < 2:
+            fibo = n
+        if n > 1:
+            fibo = fiboAnterior + fiboAnteAnterior 
+            fiboAnteAnterior = fiboAnterior
+            fiboAnterior = fibo
+            
+        print("fibo ",fibo)
+        
+        
+fibo(10)
+
+'''
+
+
+'''
+ * Escribe un programa que se encargue de comprobar si un número es o no primo.
+ * Hecho esto, imprime los números primos entre 1 y 100.
+def primos(num):
+    numeros = []
+    for n in range(0,num+1):
+        if n < 2:
+            print("El numero ", n , "es primo.")
+        else:
+            primo = True
+            for cada in numeros:
+                resto = n % cada
+                if resto == 0:
+                    primo = False
+                    break
+                      
+            if primo == False:
+                numeros.append(n) 
+                print(f"El numero {n} no es primo.")
+            else:
+                numeros.append(n) 
+                print(f"** SI. El numero {n} SI es primo.")       
+                    
+primos(20)
+'''

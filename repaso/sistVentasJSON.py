@@ -4,6 +4,8 @@ from math import prod
 from sre_constants import CATEGORY_NOT_LINEBREAK
 from time import monotonic
 
+
+
 # ----------- FUNCIONES -----------------------
 def createProduct():
     ultimo=len(productList)
