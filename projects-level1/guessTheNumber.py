@@ -8,6 +8,13 @@ def run():
     maxAttempts = 10
     finish = False
 
+    print(f'''
+-------------------------------------------------------------------------------------
+WELCOME =) ..! 
+In this game, you have to guess a number between {numberFrom} and {numberTo}. 
+You have {maxAttempts} attempts to achieve it.
+Good luck !!!!
+''')
     while finish != True:
         number = input(f"*** Insert a number, please (from {numberFrom} to {numberTo}): ")
         
