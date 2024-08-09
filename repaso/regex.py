@@ -74,10 +74,10 @@ if many:
 '''
 abc…	Letters
 123…	Digits
-\d	Any Digit
-\D	Any Non-digit character
-.	Any Character
-\.	Period
+\d	    Any Digit
+\D	    Any Non-digit character
+.	    Any Character
+\.	    Period
 [abc]	Only a, b, or c
 [^abc]	Not a, b, nor c
 [a-z]	Characters a to z
