@@ -28,17 +28,17 @@ Good luck !!!!
             else:        
                 if number > searchedNumber:
                     attempts += 1
-                    print(f"The inserted number is grater than the 'Unknow' one.  ")
-                    print(f"The number of available attempts is: {maxAttempts - attempts}")
+                    print(f"The inserted number ({number}) is GREATER than the 'Unknow' one.  ")
+                    print(f"The number of available attempts is: {maxAttempts - attempts}\n")
                 elif number < searchedNumber:
                     attempts += 1
-                    print(f"The inserted number is smaller than the 'Unknow' one.  ")
-                    print(f"The number of available attempts is: {maxAttempts - attempts}")
+                    print(f"The inserted number ({number}) is SMALLER than the 'Unknow' one.  ")
+                    print(f"The number of available attempts is: {maxAttempts - attempts}\n")
                 else:
                     print (f"\nYou have won.!!! \nThe number of attempst was {attempts}\n")
                     finish = True
             
         if attempts >= maxAttempts:
-            print("\nSORRY... \nYou have already use all the attemps.\n")
+            print("\nSORRY... \nYou have already use all the attemps.\n GAME OVER...\n")
             break
 run()
