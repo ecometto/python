@@ -1,0 +1,304 @@
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240818021911_20240816T184748.tar.gz
+'SB1_PassScript_10020240818021911_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/18 02:19:20 
+LOS: LOS = 2024/08/18 02:33:02
+TT Comands: 130
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240818035727_20240816T184748.tar.gz
+'SB1_PassScript_10020240818035727_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/18 03:57:36 
+LOS: LOS = 2024/08/18 04:09:42
+TT Comands: 130
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240818132037_20240816T184748.tar.gz
+'SB1_PassScript_10020240818132037_20240816T184748.scl: 
+Type: MAIN 
+AOS:AOS = 2024/08/18 13:20:45 
+LOS: LOS = 2024/08/18 13:33:39
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240818145807_20240816T184748.tar.gz
+'SB1_PassScript_10020240818145807_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/18 14:58:16 
+LOS: LOS = 2024/08/18 15:11:28
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240819012616_20240816T184748.tar.gz
+'SB1_PassScript_10020240819012616_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/19 01:26:25 
+LOS: LOS = 2024/08/19 01:36:37
+TT Comands: 100
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240819030229_20240816T184748.tar.gz
+'SB1_PassScript_10020240819030229_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/19 03:02:38 
+LOS: LOS = 2024/08/19 03:16:38
+TT Comands: 100
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240819122917_20240816T184748.tar.gz
+'SB1_PassScript_10020240819122917_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/19 12:29:25 
+LOS: LOS = 2024/08/19 12:37:43
+TT Comands: 100
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240819140316_20240816T184749.tar.gz
+'SB1_PassScript_10020240819140316_20240816T184749.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/19 14:03:25 
+LOS: LOS = 2024/08/19 14:17:31
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240819154337_20240816T184749.tar.gz
+'SB1_PassScript_10020240819154337_20240816T184749.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/19 15:43:46 
+LOS: LOS = 2024/08/19 15:53:28
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240820020828_20240816T184749.tar.gz
+'SB1_PassScript_10020240820020828_20240816T184749.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/20 02:08:37 
+LOS: LOS = 2024/08/20 02:22:01
+TT Comands: 120
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240820034623_20240816T184749.tar.gz
+'SB1_PassScript_10020240820034623_20240816T184749.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/20 03:46:32 
+LOS: LOS = 2024/08/20 03:59:14
+TT Comands: 120
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240820131008_20240816T184749.tar.gz
+'SB1_PassScript_10020240820131008_20240816T184749.scl: 
+Type: MAIN 
+AOS:AOS = 2024/08/20 13:10:16 
+LOS: LOS = 2024/08/20 13:22:34
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240820144700_20240816T184749.tar.gz
+'SB1_PassScript_10020240820144700_20240816T184749.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/20 14:47:09 
+LOS: LOS = 2024/08/20 15:00:45
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240823151832_20240816T151832.tar.gz
+'SB1_PassScript_10020211201022858_20220121T173001.scl: 
+Type: BACKUP 
+AOS:AOS = 2021/12/23 02:28:58 
+LOS: LOS = 2021/12/23 02:42:52
+TT Comands: 434
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240823152350_20240816T152350.tar.gz
+'SB1_PassScript_10020211201022858_20220121T173001.scl: 
+Type: BACKUP 
+AOS:AOS = 2021/12/23 02:28:58 
+LOS: LOS = 2021/12/23 02:42:52
+TT Comands: 434
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240823154403_20240816T154403.tar.gz
+'SB1_PassScript_10020211201022858_20220121T173001.scl: 
+Type: BACKUP 
+AOS:AOS = 2021/12/23 02:28:58 
+LOS: LOS = 2021/12/23 02:42:52
+TT Comands: 434
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240823155747_20240816T155747.tar.gz
+'SB1_PassScript_10020211201022858_20220121T173001.scl: 
+Type: BACKUP 
+AOS:AOS = 2021/12/23 02:28:58 
+LOS: LOS = 2021/12/23 02:42:52
+TT Comands: 434
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_10020240823180017_20240816T180017.tar.gz
+'SB1_PassScript_10020211201022858_20220121T173001.scl: 
+Type: BACKUP 
+AOS:AOS = 2021/12/23 02:28:58 
+LOS: LOS = 2021/12/23 02:42:52
+TT Comands: 434
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240818021307_20240816T184748.tar.gz
+'SB1_PassScript_11020240818021307_20240816T184748.scl: 
+Type: MAIN 
+AOS:AOS = 2024/08/18 02:13:16 
+LOS: LOS = 2024/08/18 02:26:28
+TT Comands: 130
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240818035050_20240816T184748.tar.gz
+'SB1_PassScript_11020240818035050_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/18 03:50:59 
+LOS: LOS = 2024/08/18 04:05:05
+TT Comands: 130
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240818052904_20240816T184748.tar.gz
+'SB1_PassScript_11020240818052904_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/18 05:29:13 
+LOS: LOS = 2024/08/18 05:40:43
+TT Comands: 130
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240818115036_20240816T184748.tar.gz
+'SB1_PassScript_11020240818115036_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/18 11:50:45 
+LOS: LOS = 2024/08/18 12:01:57
+TT Comands: 130
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240818132603_20240816T184748.tar.gz
+'SB1_PassScript_11020240818132603_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/18 13:26:12 
+LOS: LOS = 2024/08/18 13:40:12
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240818150430_20240816T184748.tar.gz
+'SB1_PassScript_11020240818150430_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/18 15:04:39 
+LOS: LOS = 2024/08/18 15:18:03
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240819011925_20240816T184748.tar.gz
+'SB1_PassScript_11020240819011925_20240816T184748.scl: 
+Type: MAIN 
+AOS:AOS = 2024/08/19 01:19:34 
+LOS: LOS = 2024/08/19 01:29:52
+TT Comands: 100
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240819025627_20240816T184748.tar.gz
+'SB1_PassScript_11020240819025627_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/19 02:56:36 
+LOS: LOS = 2024/08/19 03:10:42
+TT Comands: 100
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240819043427_20240816T184748.tar.gz
+'SB1_PassScript_11020240819043427_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/19 04:34:36 
+LOS: LOS = 2024/08/19 04:47:54
+TT Comands: 100
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240819061251_20240816T184748.tar.gz
+'SB1_PassScript_11020240819061251_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/19 06:12:59 
+LOS: LOS = 2024/08/19 06:22:17
+TT Comands: 100
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240819105845_20240816T184748.tar.gz
+'SB1_PassScript_11020240819105845_20240816T184748.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/19 10:58:54 
+LOS: LOS = 2024/08/19 11:07:12
+TT Comands: 100
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240819123240_20240816T184748.tar.gz
+'SB1_PassScript_11020240819123240_20240816T184748.scl: 
+Type: MAIN 
+AOS:AOS = 2024/08/19 12:32:49 
+LOS: LOS = 2024/08/19 12:45:43
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240819140924_20240816T184749.tar.gz
+'SB1_PassScript_11020240819140924_20240816T184749.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/19 14:09:33 
+LOS: LOS = 2024/08/19 14:23:45
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240819154929_20240816T184749.tar.gz
+'SB1_PassScript_11020240819154929_20240816T184749.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/19 15:49:38 
+LOS: LOS = 2024/08/19 16:01:02
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240820020219_20240816T184749.tar.gz
+'SB1_PassScript_11020240820020219_20240816T184749.scl: 
+Type: MAIN 
+AOS:AOS = 2024/08/20 02:02:28 
+LOS: LOS = 2024/08/20 02:15:16
+TT Comands: 120
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240820033956_20240816T184749.tar.gz
+'SB1_PassScript_11020240820033956_20240816T184749.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/20 03:40:05 
+LOS: LOS = 2024/08/20 03:54:17
+TT Comands: 120
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240820051808_20240816T184749.tar.gz
+'SB1_PassScript_11020240820051808_20240816T184749.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/20 05:18:17 
+LOS: LOS = 2024/08/20 05:30:11
+TT Comands: 120
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240820114010_20240816T184749.tar.gz
+'SB1_PassScript_11020240820114010_20240816T184749.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/20 11:40:18 
+LOS: LOS = 2024/08/20 11:51:00
+TT Comands: 120
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240820131518_20240816T184749.tar.gz
+'SB1_PassScript_11020240820131518_20240816T184749.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/20 13:15:27 
+LOS: LOS = 2024/08/20 13:29:21
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\programacion\python\scripts\seeMainOrBackup\2024\229\SB1_PassScript_11020240820145323_20240816T184749.tar.gz
+'SB1_PassScript_11020240820145323_20240816T184749.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/20 14:53:32 
+LOS: LOS = 2024/08/20 15:07:08
+TT Comands: 0
+
