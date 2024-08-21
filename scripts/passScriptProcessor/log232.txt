@@ -1,0 +1,280 @@
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240821011602_20240819T180525.tar.gz
+'SB1_PassScript_10020240821011602_20240819T180525.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/21 01:16:10 
+LOS: LOS = 2024/08/21 01:24:58
+TT Comands: 202
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240821025136_20240819T180525.tar.gz
+'SB1_PassScript_10020240821025136_20240819T180525.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/21 02:51:45 
+LOS: LOS = 2024/08/21 03:05:51
+TT Comands: 202
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240821043106_20240819T180526.tar.gz
+'SB1_PassScript_10020240821043106_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/21 04:31:15 
+LOS: LOS = 2024/08/21 04:40:21
+TT Comands: 202
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240821135230_20240819T180526.tar.gz
+'SB1_PassScript_10020240821135230_20240819T180526.scl: 
+Type: MAIN 
+AOS:AOS = 2024/08/21 13:52:39 
+LOS: LOS = 2024/08/21 14:06:39
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240821153202_20240819T180526.tar.gz
+'SB1_PassScript_10020240821153202_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/21 15:32:11 
+LOS: LOS = 2024/08/21 15:43:05
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240822015748_20240819T180526.tar.gz
+'SB1_PassScript_10020240822015748_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/22 01:57:57 
+LOS: LOS = 2024/08/22 02:10:51
+TT Comands: 195
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240822033521_20240819T180526.tar.gz
+'SB1_PassScript_10020240822033521_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/22 03:35:30 
+LOS: LOS = 2024/08/22 03:48:42
+TT Comands: 195
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240822125944_20240819T180526.tar.gz
+'SB1_PassScript_10020240822125944_20240819T180526.scl: 
+Type: MAIN 
+AOS:AOS = 2024/08/22 12:59:53 
+LOS: LOS = 2024/08/22 13:11:29
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240822143558_20240819T180526.tar.gz
+'SB1_PassScript_10020240822143558_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/22 14:36:07 
+LOS: LOS = 2024/08/22 14:50:01
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240823024045_20240819T180526.tar.gz
+'SB1_PassScript_10020240823024045_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/23 02:40:54 
+LOS: LOS = 2024/08/23 02:55:00
+TT Comands: 204
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240823041948_20240819T180526.tar.gz
+'SB1_PassScript_10020240823041948_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/23 04:19:57 
+LOS: LOS = 2024/08/23 04:30:15
+TT Comands: 204
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240823134148_20240819T180526.tar.gz
+'SB1_PassScript_10020240823134148_20240819T180526.scl: 
+Type: MAIN 
+AOS:AOS = 2024/08/23 13:41:56 
+LOS: LOS = 2024/08/23 13:55:38
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240823152037_20240819T180526.tar.gz
+'SB1_PassScript_10020240823152037_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/23 15:20:46 
+LOS: LOS = 2024/08/23 15:32:40
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_10020240827184816_20240820T184816.tar.gz
+'SB1_PassScript_10020211201022858_20220121T173001.scl: 
+Type: BACKUP 
+AOS:AOS = 2021/12/23 02:28:58 
+LOS: LOS = 2021/12/23 02:42:52
+TT Comands: 434
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240821010849_20240819T180525.tar.gz
+'SB1_PassScript_11020240821010849_20240819T180525.scl: 
+Type: MAIN 
+AOS:AOS = 2024/08/21 01:08:58 
+LOS: LOS = 2024/08/21 01:18:16
+TT Comands: 202
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240821024536_20240819T180525.tar.gz
+'SB1_PassScript_11020240821024536_20240819T180525.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/21 02:45:44 
+LOS: LOS = 2024/08/21 02:59:44
+TT Comands: 202
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240821042332_20240819T180526.tar.gz
+'SB1_PassScript_11020240821042332_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/21 04:23:41 
+LOS: LOS = 2024/08/21 04:37:17
+TT Comands: 202
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240821060153_20240819T180526.tar.gz
+'SB1_PassScript_11020240821060153_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/21 06:02:02 
+LOS: LOS = 2024/08/21 06:11:56
+TT Comands: 202
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240821122206_20240819T180526.tar.gz
+'SB1_PassScript_11020240821122206_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/21 12:22:15 
+LOS: LOS = 2024/08/21 12:34:45
+TT Comands: 202
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240821135830_20240819T180526.tar.gz
+'SB1_PassScript_11020240821135830_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/21 13:58:39 
+LOS: LOS = 2024/08/21 14:12:51
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240821153809_20240819T180526.tar.gz
+'SB1_PassScript_11020240821153809_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/21 15:38:18 
+LOS: LOS = 2024/08/21 15:50:24
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240822015133_20240819T180526.tar.gz
+'SB1_PassScript_11020240822015133_20240819T180526.scl: 
+Type: MAIN 
+AOS:AOS = 2024/08/22 01:51:42 
+LOS: LOS = 2024/08/22 02:04:00
+TT Comands: 195
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240822032903_20240819T180526.tar.gz
+'SB1_PassScript_11020240822032903_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/22 03:29:12 
+LOS: LOS = 2024/08/22 03:43:24
+TT Comands: 195
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240822050712_20240819T180526.tar.gz
+'SB1_PassScript_11020240822050712_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/22 05:07:21 
+LOS: LOS = 2024/08/22 05:19:39
+TT Comands: 195
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240822112945_20240819T180526.tar.gz
+'SB1_PassScript_11020240822112945_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/22 11:29:54 
+LOS: LOS = 2024/08/22 11:40:06
+TT Comands: 195
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240822130436_20240819T180526.tar.gz
+'SB1_PassScript_11020240822130436_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/22 13:04:44 
+LOS: LOS = 2024/08/22 13:18:26
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240822144220_20240819T180526.tar.gz
+'SB1_PassScript_11020240822144220_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/22 14:42:28 
+LOS: LOS = 2024/08/22 14:56:22
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240822162401_20240819T180526.tar.gz
+'SB1_PassScript_11020240822162401_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/22 16:24:10 
+LOS: LOS = 2024/08/22 16:32:58
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240823005818_20240819T180526.tar.gz
+'SB1_PassScript_11020240823005818_20240819T180526.scl: 
+Type: MAIN 
+AOS:AOS = 2024/08/23 00:58:26 
+LOS: LOS = 2024/08/23 01:06:38
+TT Comands: 204
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240823023445_20240819T180526.tar.gz
+'SB1_PassScript_11020240823023445_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/23 02:34:54 
+LOS: LOS = 2024/08/23 02:48:42
+TT Comands: 204
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240823041238_20240819T180526.tar.gz
+'SB1_PassScript_11020240823041238_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/23 04:12:47 
+LOS: LOS = 2024/08/23 04:26:35
+TT Comands: 204
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240823055057_20240819T180526.tar.gz
+'SB1_PassScript_11020240823055057_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/23 05:51:06 
+LOS: LOS = 2024/08/23 06:01:36
+TT Comands: 204
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240823121134_20240819T180526.tar.gz
+'SB1_PassScript_11020240823121134_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/23 12:11:43 
+LOS: LOS = 2024/08/23 12:23:49
+TT Comands: 204
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240823134739_20240819T180526.tar.gz
+'SB1_PassScript_11020240823134739_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/23 13:47:48 
+LOS: LOS = 2024/08/23 14:02:00
+TT Comands: 0
+
+
+FILE: 'C:\xampp\htdocs\github\python\scripts\passScriptProcessor\passScript\SB1_PassScript_11020240823152652_20240819T180526.tar.gz
+'SB1_PassScript_11020240823152652_20240819T180526.scl: 
+Type: BACKUP 
+AOS:AOS = 2024/08/23 15:27:01 
+LOS: LOS = 2024/08/23 15:39:37
+TT Comands: 0
+
