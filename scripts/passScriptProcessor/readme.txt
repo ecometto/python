@@ -1,19 +1,28 @@
-DESCRIPTIONS:
-This script download PassScripts from NFS (import directory 2024).
-Then ask about the "day of year" sub-directory, according to:
-	- make modifications in .scl files (date and time format) 
-	- analice type of pass (main/backup), AOS, LOS and quantity of TT
-
-After modify each .scl file, new data is saved with the same name.
 
 
----------------------------------------------------------------
-ACTIONS:
+**** ATTENTION ****
+in the current path, open a terminal and execute:
 
-* Copy and paste all the directory 'seeMainOrBackup'
+crea una carpeta para guardar los archivos separando por anio
+>> mkdir 2024  
 
-* Go to this directory
+copia datos de origen
+>> scp -r administrator@192.168.65.110:/kubernetes/products-manager/products-repo/PRODUCT/SB1/PassScript/2024/234/ ./2024
 
-* Execute: >> python seeMaionOrBackup.py
+You should have the next directory tree:
+--2024
+------234
+----------FileToProcess1.tar.gz
+----------FileToProcess2.tar.gz
+----------FileToProcess3.tar.gz
+----------FileToProcess4.tar.gz
+....................
+----------FileToProcessN.tar.gz
 
-* See the file log.txt to see "main" or "backup" type Pass
+corre el script que modifica el formato de fecha y evalua los tipos de pasadas y cantidad de TT
+>> python passScriptProcesor.py 
+
+
+
+//previous command:
+>> scp -r administrator@192.168.65.110:/home/administrator/234/ ./2024

@@ -1,24 +1,27 @@
 import os, io, tarfile, re, zipfile
-from dataManager import downloadDataFromNFS
-
 
 
 def modifySCLContent(content):
+    global log
     contenido_modificado, numero_de_sustituciones = re.subn(patternDateTimeBad, replaceString, content)
     
     if numero_de_sustituciones > 0:
         print(f"\t** There were {numero_de_sustituciones} changes in this file\n")
+        log += f"\t** There were {numero_de_sustituciones} changes in this file\n\n"
     else:
         print(f"\t** No changes were made\n")
+        log += f"\t** No changes were made\n"
     return contenido_modificado
 
 
 def replaceString(match):
+    global log
     text = match.group(0)
     # print("Old Text: " ,text)
     newText = text.replace('-','/')
     newText = newText[0:-13]
     print(f"Old Text: {text} -- New Text: {newText}")
+    log += f"Old Text: {text} -- New Text: {newText}\n"
     
     return newText
 
@@ -45,6 +48,7 @@ def SeeSCLContent(content):
 def procesar_tar_gz(archivo_tar_gz):
     buffer = io.BytesIO()
     
+    global log
     log = "\n"
     log += f"FILE: '{archivo_tar_gz}\n'"
     print(f"Processing '{archivo_tar_gz}' ")
@@ -79,17 +83,17 @@ def procesar_tar_gz(archivo_tar_gz):
 
 
 # Variables / #Patterns
-patternDateTimeBad = r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{6}\+\d{2}:\d{2}' # Patrón de fecha con milisegundos y zona horaria (Ej: 2024/05/04 15:07:08)
-patternDateTimeOK = r'\d{4}/\d{2}/\d{2} \d{2}:\d{2}:\d{2}' # Patrón con barra en la fecha, sin milisegundos ni zona horaria (Ej: 2024/05/04 15:07:08)
+patternDateTimeBad = r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{6}\+\d{2}:\d{2}' # Patrón fecha incorrecta con milisegundos y zona horaria.
 pattern = r'MAIN_PASS = [a-z]*;' # Patrón de definición de tipo de pasada
 AOSPattern = r'AOS = \d{4}\/\d{2}\/\d{2} \d{2}:\d{2}:\d{2}' # Patrón de fecha con milisegundos y zona horaria (Ej: 2024/05/04 15:07:08)
 LOSPattern = r'LOS = \d{4}\/\d{2}\/\d{2} \d{2}:\d{2}:\d{2}' # Patrón de fecha con milisegundos y zona horaria (Ej: 2024/05/04 15:07:08)
 TTPatern = r'Send Time Tagged TC name'
 
 # Variables / #paths
-# year, directoryDay = downloadDataFromNFS()
+year = input("Type the YEAR of passScripts: ")
+day = input("Type the DAY of passScripts: ")
 basePath = os.getcwd() 
-absPath = os.path.join(basePath,'passScript')
+absPath = os.path.join(basePath,year,day)
 log = ""
 
 
@@ -102,5 +106,5 @@ for passScript in listOfPassScript:
     
 
 # WRITE LOG IN A FILE
-with open(f"./log{directoryDay}.txt", 'w') as f:
+with open(f"./log{day}.txt", 'w') as f:
     f.write(log)
