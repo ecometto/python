@@ -1,0 +1,15 @@
+{% extends 'template.html' %}
+
+{% block title %}
+    {{title}}
+{% endblock%}
+
+
+
+{% block body %}
+    <h4 class="mt-4"><b>Titulo: </b> <i> {{ song.title }} </i> </h4>
+    <h4> <b>Autor:</b> <i> {{ song.autor }} </i></h4>
+    <br>
+    <h4>Letter:</h4>
+    <p class="border rounded p-4">{{ song.lyric }}</p>
+{% endblock %}

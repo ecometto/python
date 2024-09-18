@@ -1,0 +1,43 @@
+{% extends './template.html'%}
+
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+
+{% block body %}
+
+<h1 class="text-center m-4 p-2">LIST OF SONGS</h1>
+
+<table class="table table-light">
+    <thead class="thead-light">
+        <tr>
+            <th>Title</th>
+            <th>Autor</th>
+            <th>Genre</th>
+            <th></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {% if data | length > 0  %}
+        {% for song in data %}
+        <tr>
+            <td>{{ song.title }}</td>
+            <td>{{ song.autor }}</td>
+            <td>{{ song.genre }}</td>
+            <td>
+                <a href="details/{{ song.id }}">See the lyric...</a>
+            </td>
+        </tr>
+        {% endfor %}
+        {% else %}
+        <tr>
+            <td colspan="4">No data to show</td>
+        </tr>
+        {% endif %}
+    </tbody>
+
+</table>
+{% endblock %}
